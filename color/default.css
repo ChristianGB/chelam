@@ -1,74 +1,74 @@
 a:hover,
 a:focus {
-    color: #FF0033;
+    color: #F6323E;
 }
 
 #navigation {
-	border-top: 5px solid #FF0033;
+	border-top: 5px solid #F6323E;
 }
 
 a,.tp-caption a.btn:hover {
-	color: #FF0033;
+	color: #F6323E;
 }
 .top-nav-collapse {
-	background: #FF0033;
+	background: #F6323E;
 }
 
 .carousel-indicators .active {
-    background-color: #FF0033;
+    background-color: #F6323E;
 }
 
 .header-text h2 span {
-    background-color: #FF0033;
+    background-color: #F6323E;
 }
 
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
-	color: #FF0033;
+	color: #F6323E;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
-    background-color: #FF0033;
+    background-color: #F6323E;
 }
 
 .widget-avatar .avatar:hover {
-    border: 5px solid #FF0033;
+    border: 5px solid #F6323E;
 }
 
 .bg-skin {
-	background: #FF0033;
+	background: #F6323E;
 }
 
 .highlight-color {
-	background-color: #FF0033;
+	background-color: #F6323E;
 }
 
 .service-box:hover {
-	border-bottom: 2px solid #FF0033;
+	border-bottom: 2px solid #F6323E;
 }
 
 
 
 form#contact-form input:focus,form#contact-form select:focus,form#contact-form textarea:focus {
-	border-color: #FF0033;
+	border-color: #F6323E;
 }
 form.search-form input:focus {
-	border-color: #FF0033;
+	border-color: #F6323E;
 }
 
 /* footer */
 ul.footer-menu li a:hover {
-	color: #FF0033;
+	color: #F6323E;
 }
 
 footer a.totop:hover {
-	color: #FF0033;
+	color: #F6323E;
 }
 
 
 .btn-skin {
-  color: #FF0033;
+  color: #F6323E;
   border-radius: 50px;
-  border-color: #FF0033;
+  border-color: #F6323E;
 }
