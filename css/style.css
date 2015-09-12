@@ -12,7 +12,7 @@ body {
     height: 100%;
     font-family: 'Ek Mukta', sans-serif;
 	font-weight: 300;
-    color: #666;
+    color: #FF0033;
     background-color: #fff;
 	font-size: 16px;
     line-height: 1.6em;
@@ -27,6 +27,7 @@ html {
 
 h1 {
 	font-size: 38px;
+
 }
 h2 {
 	font-size: 36px;
@@ -53,7 +54,7 @@ h6 {
     margin: 0 0 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-	color: #111;
+	color: #FF0033;
 }
 
 h1.h-xlight,h2.h-xlight,h3.h-xlight ,h4.h-xlight ,h5.h-xlight ,h6.h-xlight  {
@@ -69,7 +70,7 @@ h1.h-bold,h2.h-bold,h3.h-bold ,h4.h-bold ,h5.h-bold ,h6.h-bold  {
 }
 
 h1.font-light,h2.font-light,h3.font-light,h4.font-light,h5.font-light,h6.font-light {
-	color: #fff;
+	color: #FF0033;
 }
 
 .big-heading {
@@ -296,6 +297,8 @@ hr.bold {
 	height: 2px;
 	margin: 0 auto;
 	margin-bottom: 10px;
+	color: #FF0033;
+	background-color: #FF0033;
 }
 
 .divider-short {
@@ -304,6 +307,8 @@ hr.bold {
 	height: 5px;
 	margin: 0 auto;
 	margin-bottom: 10px;
+	color: #FF0033;
+	background-color: #FF0033;
 }
 
 /* margins */
@@ -435,6 +440,9 @@ hr.bold {
 	margin-top: -160px;
 	width: 434;
 	height:400px;
+}
+.logosCervezas{
+	height: 20%;
 }
 .intro {
 	width:100%;
@@ -800,7 +808,7 @@ form.search-form input:focus {
 ============================ */
 
 footer {
-    background-color: #404040;
+    background-color: #FF0033;
 }
 
 footer {
@@ -957,7 +965,10 @@ a.btn:focus{
   font-size: 14px;
   line-height: 40px;
 }
-
+.logo2{
+	width: 300px;
+	height: 100px;
+}
 /* Media queries */
 
 @media(min-width:767px) {
