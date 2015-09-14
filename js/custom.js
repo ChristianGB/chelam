@@ -68,5 +68,16 @@
 			jQuery('.nav li').removeClass('active');
 			jQuery(".nav a[href='#" + id + "']").parent().addClass("active");					
 		});
-	
+	$('#myModal').modal({backdrop: 'static', keyboard: false});
+	$('#modal').on('show.bs.modal', function () {
+       $(this).find('.modal-body').css({
+              width:'auto', //probably not needed
+              height:'auto', //probably not needed 
+              'max-height':'100%'
+       });
+	});
+
+	$("#btnSi").click(function(){
+		$('#myModal').modal('toggle');
+	});
 })(jQuery);
