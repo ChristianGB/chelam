@@ -77,7 +77,10 @@
        });
 	});
 
+
 	$("#btnSi").click(function(){
 		$('#myModal').modal('toggle');
-	});
+	});	
+
+	
 })(jQuery);
