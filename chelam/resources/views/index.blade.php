@@ -15,9 +15,9 @@
 
 					<div class="animatedParent">
 						
-						<img src="img/chelas/logohorz_color.png" class="logos animated fadeInDown">
+						<img src="img/chelas/logohorz_color.png" class="logos animated">
 						
-						<p class="animated fadeInUp">Cerveza artesanal hasta tu casa</p>
+						<p class="animated">Cerveza artesanal hasta tu casa</p>
 					</div>
 			   </div>
               </div>
@@ -91,7 +91,7 @@
 
         <div class="row animatedParent">
             <div class="col-xs-6 col-sm-4 col-md-4">
-				<div class="animated rotateInDownLeft">
+				<div class="animated">
                 <div class="service-box">
 					<div class="service-icon">
 						<span class="fa fa-beer fa-2x"></span> 
@@ -108,7 +108,7 @@
 				</div>
             </div>
 			<div class="col-xs-6 col-sm-4 col-md-4">
-				<div class="animated rotateInDownRight slow">
+				<div class="animated slow">
                 <div class="service-box">
 					<div class="service-icon">
 						<span class="fa fa-truck fa-2x"></span> 
@@ -125,7 +125,7 @@
 				</div>
             </div>
 			<div class="col-xs-6 col-sm-4 col-md-4">
-				<div class="animated rotateInDownLeft slower">
+				<div class="animated slower">
                 <div class="service-box">
 					<div class="service-icon">
 						<span class="fa fa-heart fa-2x"></span> 
@@ -164,7 +164,7 @@
 		<div class="container">
         	<div class="row animatedParent">
         		<div class="col-xs-6 col-sm-4 col-md-6">
-        			<div class="animated rotateInDownRight slow">
+        			<div class="animated slow">
 		                <div class="service-box">
 							<div class="service-icon">
 								
@@ -181,7 +181,7 @@
         		</div>
         		
 				<div class="col-xs-6 col-sm-4 col-md-6">
-        			<div class="animated rotateInDownLeft slow">
+        			<div class="animated slow">
 		                <div class="service-box">
 							<div class="service-icon">
 								
