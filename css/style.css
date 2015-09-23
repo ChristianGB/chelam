@@ -1150,6 +1150,18 @@ a.btn:focus{
 	margin-top: -24px;
 	margin-left: 160px;
 }
+.informacion .precio h4{
+	font-size: 15px;
+	margin-top: 0px;
+	margin-left: 15px;
+	margin-bottom: 7px;
+}
+.informacion .precio h3{
+	font-size: 14px;
+	margin-top: -23px;
+	margin-left: 180px;
+	margin-bottom: -38px;
+}
 .informacion h5{
 	font-size: 11px;
 	margin-top: -23px;
