@@ -19,6 +19,14 @@
 	<link href="color/default.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="img/chelas/imago_color.png"/>
 </head>
+<script type="text/javascript">
+		function HiddenFunction() {
+			document.getElementById("inf").style.visibility = "hidden";
+		}
+		function VisibleFunction() {
+			document.getElementById("inf").style.visibility = "visible";
+		}
+	</script>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 	<!-- Trigger the modal with a button -->
@@ -78,9 +86,9 @@
                                                                   <li><a href="#works">Membresias</a></li>				
                                                                   <li><a href="#contact">Preguntas Frecuentes</a></li>
                                                                   <li><a href="login.html">Login</a></li>
-                                                                  <li><a href="#"><span class="fa fa-shopping-cart fa-2x"></span></a></li>
+                                                                  <li onmouseover="VisibleFunction()" onmouseout="HiddenFunction()"><a href="#"><span class="fa fa-shopping-cart fa-2x" ></span></a></li>
                                                                   <li><a>0</a></li>
-                                                                  <div class="informacion">
+                                                                  <div class="informacion" id="inf">
                                                                   	<div class="dec"></div>
                                                                   	<h1>Tu Compra</h1>
                                                                   	<hr>
