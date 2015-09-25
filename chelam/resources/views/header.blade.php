@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Chelam</title>
+    <script href="" type="text/javascript"></script>
 	
     <!-- css -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -74,12 +73,40 @@
                                                             <ul class="nav navbar-nav navbar-right">
                                                                   <li class="active"><a href="chelas">Chelas</a></li>
                                                                   <li><a href="chelapack">Chelapack</a></li>
-																                                  <li><a href="#service">Mayoreo</a></li>
+																                                  <li><a href="mayoreo">Mayoreo</a></li>
                                                                   <li><a href="#works">Membresias</a></li>				
                                                                   <li><a href="#contact">Preguntas Frecuentes</a></li>
                                                                   <li><a href="login.html">Iniciar sesión</a></li>
                                                                   <li><a href="#"><span class="fa fa-shopping-cart fa-2x"></span></a></li>
                                                                   <li><a>0</a></li>
+                                                                  <div class="informacion" id="inf" onmouseover="VisibleFunction()" onmouseout="HiddenFunction()">
+                                                                    <div class="dec"></div>
+                                                                    <h1>Tu Compra</h1>
+                                                                    <hr>
+                                                                    <img src="img/chelas/caja.png" class="imagen" >
+                                                                    <h2>ChelaPack</h2>
+                                                                    <p>Personalizado</p>
+                                                                    <h3>3 de 6 cervezas</h3>
+                                                                    <h4>$195.00</h4>
+                                                                    <h5>Envio incluido a todo México</h5>
+                                                                    <div class="delete">
+                                                                        <img src="img/x.png"><br>
+                                                                        <img src="img/x.png"><br>
+                                                                        <img src="img/x.png"><br>
+                                                                      </div>
+                                                                    <div class="precio">
+                                                                      <h4>Amnecia Nocturna</h4>
+                                                                      <h4>Trepadora Red Ale</h4>
+                                                                      <h4>Tzotzil Porter</h4>
+                                                                      <h3>1 x $65</h3>
+                                                                      <h3>1 x $65</h3>
+                                                                      <h3>1 x $65</h3>
+                                                                    </div>
+                                                                    <hr id="dow">
+                                                                    <div id="total">Total:</div>
+                                                                    <div class="valor">$195.00</div>
+                                                                    <button>Comprar</button>
+                                                                  </div>
                                                             </ul>
                                                       </div>
                              
