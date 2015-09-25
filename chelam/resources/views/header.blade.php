@@ -89,18 +89,25 @@
                                                                     <h3>3 de 6 cervezas</h3>
                                                                     <h4>$195.00</h4>
                                                                     <h5>Envio incluido a todo México</h5>
-                                                                    <div class="delete">
-                                                                        <img src="img/x.png"><br>
-                                                                        <img src="img/x.png"><br>
-                                                                        <img src="img/x.png"><br>
-                                                                      </div>
+
                                                                     <div class="precio">
-                                                                      <h4>Amnecia Nocturna</h4>
-                                                                      <h4>Trepadora Red Ale</h4>
-                                                                      <h4>Tzotzil Porter</h4>
-                                                                      <h3>1 x $65</h3>
-                                                                      <h3>1 x $65</h3>
-                                                                      <h3>1 x $65</h3>
+                                                                      <table align="center">
+                                                                          <tr>
+                                                                            <td><img src="img/x.png"></td>
+                                                                            <th>Amnecia</th>
+                                                                            <td>1 x $65</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td><img src="img/x.png"></td>
+                                                                            <th>Trepadora</th>
+                                                                            <td>1 x $65</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td><img src="img/x.png"></td>
+                                                                            <th>Tzotzil</th>
+                                                                            <td>1 x $65</td>
+                                                                          </tr>
+                                                                        </table>
                                                                     </div>
                                                                     <hr id="dow">
                                                                     <div id="total">Total:</div>

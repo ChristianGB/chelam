@@ -1121,6 +1121,7 @@ a.btn:focus{
 	top: 70px;
 	box-shadow: 5px 5px 8px gray;
 	color: gray;
+	display: none;
 }
 .informacion hr {border: 0; border-top: .5px solid gray; border-bottom: .5px solid gray;width: 200px;margin-left: 63px;margin-top: -2px; }
 #dow {border: 0; border-top: .5px solid gray; border-bottom: .5px solid gray;width: 290px;margin-top: 10px;margin-left: 15px;}
@@ -1186,34 +1187,31 @@ a.btn:focus{
     border-bottom: 30px solid #f9f9f9;
 }
 .precio{
-	position: absolute;
 	width: 250px;
 	height: 70px;
-	left: 45px;
-	top: 170px;
+	margin-left: 40px;
+	margin-top: -20px;
 	background-color: #fff;
 	border-radius: 5px;
 	border:solid .001em;
+	overflow:auto;
+}
+.precio td,th{
+	padding:3px;
 }
 #total{
 	font-size: 23px;
-	margin-top: -50px;
+	margin-top: -10px;
 	margin-left: 30px;
 }
 .valor{
 	font-size: 26px;
-	margin-top: -28px;
+	margin-top: -25px;
 	margin-left: 100px;
 	z-index: 1;
 }
 .informacion button{
 	position: absolute;
 	left: 220px;
-	top: 245px;
-}
-.delete img{
-	position: absolute;
-	margin-top: -20px;
-	left: 50px;
-	z-index: 1;
+	top: 260px;
 }
