@@ -260,13 +260,7 @@
 							<div class="service-icon">
 								
 							</div>
-							<div class="service-desc">
-
-								
-								<p>
-								FACEBOOK
-								</p>	
-								<p>twitter</p>					
+							<div class="service-desc">				
 								<p>Políticas de privacidad</p>
 								<p>Políticas de devolución</p>
 							</div>

@@ -5,7 +5,6 @@
 					<div class="animatedParent">
 						<div class="section-heading text-center">
 							<h2 class="h-bold animated bounceInDown">logos de cervezas</h2>
-							
 						</div>
 					</div>
 				</div>

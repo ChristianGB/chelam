@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Chelam</title>
+    <script href="" type="text/javascript"></script>
 	
     <!-- css -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -74,7 +73,7 @@
                                                             <ul class="nav navbar-nav navbar-right">
                                                                   <li class="active"><a href="chelas">Chelas</a></li>
                                                                   <li><a href="chelapack">Chelapack</a></li>
-																                                  <li><a href="#service">Mayoreo</a></li>
+																                                  <li><a href="mayoreo">Mayoreo</a></li>
                                                                   <li><a href="#works">Membresias</a></li>				
                                                                   <li><a href="#contact">Preguntas Frecuentes</a></li>
                                                                   <li><a href="login.html">Iniciar sesión</a></li>
@@ -84,6 +83,7 @@
                                                                     <div class="dec"></div>
                                                                     <h1>Tu Compra</h1>
                                                                     <hr>
+<<<<<<< HEAD
                                                                     <img src="img/chelas/caja.png" >
                                                                   <h2>ChelaPack</h2>
                                                                   <p>Personalizado</p>
@@ -97,12 +97,43 @@
                                                                       <h3>1 x $65</h3>
                                                                       <h3>1 x $65</h3>
                                                                       <h3>1 x $65</h3>
+=======
+                                                                    <img src="img/chelas/caja.png" class="imagen" >
+                                                                    <h2>ChelaPack</h2>
+                                                                    <p>Personalizado</p>
+                                                                    <h3>3 de 6 cervezas</h3>
+                                                                    <h4>$195.00</h4>
+                                                                    <h5>Envio incluido a todo México</h5>
+
+                                                                    <div class="precio">
+                                                                      <table align="center">
+                                                                          <tr>
+                                                                            <td><img src="img/x.png"></td>
+                                                                            <th>Amnecia</th>
+                                                                            <td>1 x $65</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td><img src="img/x.png"></td>
+                                                                            <th>Trepadora</th>
+                                                                            <td>1 x $65</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td><img src="img/x.png"></td>
+                                                                            <th>Tzotzil</th>
+                                                                            <td>1 x $65</td>
+                                                                          </tr>
+                                                                        </table>
+>>>>>>> 059d79a9164cffe23109860e9784240bbcf1e56d
                                                                     </div>
                                                                     <hr id="dow">
                                                                     <div id="total">Total:</div>
                                                                     <div class="valor">$195.00</div>
                                                                     <button>Comprar</button>
+<<<<<<< HEAD
                                                                     </div>
+=======
+                                                                  </div>
+>>>>>>> 059d79a9164cffe23109860e9784240bbcf1e56d
                                                             </ul>
                                                       </div>
                              

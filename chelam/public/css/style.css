@@ -286,6 +286,9 @@ blockquote strong {
 hr {
   margin-top: 10px;
 }
+p{
+	color: black;
+}
 
 hr.bold {
   border-top: 3px solid #eee;
@@ -1109,7 +1112,10 @@ a.btn:focus{
 }
 
 .informacion{
+<<<<<<< HEAD
 	visibility: hidden;
+=======
+>>>>>>> 059d79a9164cffe23109860e9784240bbcf1e56d
 	position: absolute;
 	background-color: #f9f9f9;
 	border-radius: 14px;
@@ -1119,10 +1125,18 @@ a.btn:focus{
 	top: 70px;
 	box-shadow: 5px 5px 8px gray;
 	color: gray;
+<<<<<<< HEAD
 }
 .informacion hr {border: 0; border-top: .5px solid gray; border-bottom: .5px solid gray;width: 200px;margin-left: 63px;margin-top: -2px;}
 #dow {border: 0; border-top: .5px solid gray; border-bottom: .5px solid gray;width: 290px;margin-top: 10px;margin-left: 15px;}
 .informacion img{
+=======
+	display: none;
+}
+.informacion hr {border: 0; border-top: .5px solid gray; border-bottom: .5px solid gray;width: 200px;margin-left: 63px;margin-top: -2px; }
+#dow {border: 0; border-top: .5px solid gray; border-bottom: .5px solid gray;width: 290px;margin-top: 10px;margin-left: 15px;}
+.informacion .imagen{
+>>>>>>> 059d79a9164cffe23109860e9784240bbcf1e56d
 	margin-top: -25px;
 	width: 140px;
 	height: 140px;
@@ -1154,13 +1168,21 @@ a.btn:focus{
 .informacion .precio h4{
 	font-size: 15px;
 	margin-top: 0px;
+<<<<<<< HEAD
 	margin-left: 15px;
+=======
+	margin-left: 20px;
+>>>>>>> 059d79a9164cffe23109860e9784240bbcf1e56d
 	margin-bottom: 7px;
 }
 .informacion .precio h3{
 	font-size: 14px;
 	margin-top: -23px;
+<<<<<<< HEAD
 	margin-left: 180px;
+=======
+	margin-left: 190px;
+>>>>>>> 059d79a9164cffe23109860e9784240bbcf1e56d
 	margin-bottom: -38px;
 }
 .informacion h5{
@@ -1186,11 +1208,23 @@ a.btn:focus{
 .precio{
 	width: 250px;
 	height: 70px;
+<<<<<<< HEAD
 	margin-left: 35px;
 	background-color: #fff;
 	margin-top: -20px;
 	border-radius: 5px;
 	border:solid .001em;
+=======
+	margin-left: 40px;
+	margin-top: -20px;
+	background-color: #fff;
+	border-radius: 5px;
+	border:solid .001em;
+	overflow:auto;
+}
+.precio td,th{
+	padding:3px;
+>>>>>>> 059d79a9164cffe23109860e9784240bbcf1e56d
 }
 #total{
 	font-size: 23px;
@@ -1201,10 +1235,18 @@ a.btn:focus{
 	font-size: 26px;
 	margin-top: -25px;
 	margin-left: 100px;
+<<<<<<< HEAD
+=======
+	z-index: 1;
+>>>>>>> 059d79a9164cffe23109860e9784240bbcf1e56d
 }
 .informacion button{
 	position: absolute;
 	left: 220px;
 	top: 260px;
+<<<<<<< HEAD
 	
 }
+=======
+}
+>>>>>>> 059d79a9164cffe23109860e9784240bbcf1e56d
