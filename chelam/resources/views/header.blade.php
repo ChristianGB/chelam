@@ -80,6 +80,29 @@
                                                                   <li><a href="login.html">Iniciar sesión</a></li>
                                                                   <li><a href="#"><span class="fa fa-shopping-cart fa-2x"></span></a></li>
                                                                   <li><a>0</a></li>
+                                                                  <div class="informacion" id="inf" onmouseover="VisibleFunction()" onmouseout="HiddenFunction()">
+                                                                    <div class="dec"></div>
+                                                                    <h1>Tu Compra</h1>
+                                                                    <hr>
+                                                                    <img src="img/chelas/caja.png" >
+                                                                  <h2>ChelaPack</h2>
+                                                                  <p>Personalizado</p>
+                                                                  <h3>3 de 6 cervezas</h3>
+                                                                  <h4>$195.00</h4>
+                                                                  <h5>Envio incluido a todo México</h5>
+                                                                    <div class="precio">
+                                                                      <h4>Amnecia Nocturna</h4>
+                                                                      <h4>Trepadora Red Ale</h4>
+                                                                      <h4>Tzotzil Porter</h4>
+                                                                      <h3>1 x $65</h3>
+                                                                      <h3>1 x $65</h3>
+                                                                      <h3>1 x $65</h3>
+                                                                    </div>
+                                                                    <hr id="dow">
+                                                                    <div id="total">Total:</div>
+                                                                    <div class="valor">$195.00</div>
+                                                                    <button>Comprar</button>
+                                                                    </div>
                                                             </ul>
                                                       </div>
                              

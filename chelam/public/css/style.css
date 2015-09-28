@@ -1107,3 +1107,104 @@ a.btn:focus{
 		margin-top: 10px;
 	}
 }
+
+.informacion{
+	visibility: hidden;
+	position: absolute;
+	background-color: #f9f9f9;
+	border-radius: 14px;
+	width: 320px;
+	height: 300px;
+	left: 650px;
+	top: 70px;
+	box-shadow: 5px 5px 8px gray;
+	color: gray;
+}
+.informacion hr {border: 0; border-top: .5px solid gray; border-bottom: .5px solid gray;width: 200px;margin-left: 63px;margin-top: -2px;}
+#dow {border: 0; border-top: .5px solid gray; border-bottom: .5px solid gray;width: 290px;margin-top: 10px;margin-left: 15px;}
+.informacion img{
+	margin-top: -25px;
+	width: 140px;
+	height: 140px;
+}
+.informacion h1{
+	margin-top: 5px;
+	margin-bottom: 0px;
+	margin-left: 85px;
+	font-size: 25px;
+	color: gray;
+}
+.informacion h2{
+	font-size: 21px;
+	margin-top: -115px;
+	margin-left: 160px;
+	color: gray;
+}
+.informacion h3{
+	font-size: 20px;
+	margin-top: -20px;
+	margin-left: 160px;
+	color: blue;
+}
+.informacion h4{
+	font-size: 20px;
+	margin-top: -24px;
+	margin-left: 160px;
+}
+.informacion .precio h4{
+	font-size: 15px;
+	margin-top: 0px;
+	margin-left: 15px;
+	margin-bottom: 7px;
+}
+.informacion .precio h3{
+	font-size: 14px;
+	margin-top: -23px;
+	margin-left: 180px;
+	margin-bottom: -38px;
+}
+.informacion h5{
+	font-size: 11px;
+	margin-top: -23px;
+	margin-left: 150px;
+	color: blue;
+}
+.informacion p{
+	margin-left: 160px;
+	margin-top: -38px;
+}
+.dec {
+	position: absolute;
+	left: 220px;
+	top: -20px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #f9f9f9;
+}
+.precio{
+	width: 250px;
+	height: 70px;
+	margin-left: 35px;
+	background-color: #fff;
+	margin-top: -20px;
+	border-radius: 5px;
+	border:solid .001em;
+}
+#total{
+	font-size: 23px;
+	margin-top: -10px;
+	margin-left: 30px;
+}
+.valor{
+	font-size: 26px;
+	margin-top: -25px;
+	margin-left: 100px;
+}
+.informacion button{
+	position: absolute;
+	left: 220px;
+	top: 260px;
+	
+}
