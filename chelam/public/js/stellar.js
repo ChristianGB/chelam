@@ -7,7 +7,14 @@
  * http://markdalgleish.mit-license.org
  */
 
-;(function($, window, document, undefined) {
+ function HiddenFunction() {
+ 	document.getElementById("inf").style.visibility = "hidden";
+ }
+ function VisibleFunction() {
+ 	document.getElementById("inf").style.visibility = "visible";
+ }
+
+(function($, window, document, undefined) {
 
 	var pluginName = 'stellar',
 		defaults = {

@@ -7,17 +7,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <script href="" type="text/javascript"></script>
-    <script href="js.js" type="text/javascript"></script>
 	
     <!-- css -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-	  <link href="css/nivo-lightbox.css" rel="stylesheet" />
-    <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
-    <link href="css/animations.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/animations.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
-    <link href="color/default.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="img/chelas/imago_color.png"/>
+	<link href="color/default.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="img/chelas/imago_color.png"/>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
@@ -75,18 +74,7 @@
                 <li><a href="mayoreo">Mayoreo</a></li>
                 <li><a href="#works">Membresias</a></li>
                 <li><a href="#contact">Preguntas Frecuentes</a></li>
-                <li><a href="#">Iniciar sesión</a></li>
-                <div class="tri"></div>
-                <div class="login" id="login">
-                  <button id="bt">facebook</button>
-                  <hr>
-                  <input placeholder="Email">
-                  <input placeholder="Contraseña">
-                  <button>Iniciar sesión</button>
-                  <a href="">Recuperar Contraseña</a>
-                  <hr>
-                  <button>Crear cuenta</button>
-                </div>
+                <li><a href="login.html">Iniciar sesión</a></li>
                 <li><a href="listaCompras" onmouseover="VisibleFunction()"><span class="fa fa-shopping-cart fa-2x"></span></a></li>
                 <li><a>0</a></li>
                 <div class="informacion" id="inf" onmouseover="VisibleFunction()" onmouseout="HiddenFunction()">
@@ -130,4 +118,3 @@
       </div>
     </nav>
   </div> 	
-</div>

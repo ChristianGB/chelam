@@ -12,7 +12,7 @@ body {
     height: 100%;
     font-family: 'Ek Mukta', sans-serif;
 	font-weight: 300;
-    color: #BCBCBC;
+    color: #FF0033;
     background-color: #fff;
 	font-size: 16px;
     line-height: 1.6em;
@@ -285,9 +285,6 @@ blockquote strong {
 /* misc */
 hr {
   margin-top: 10px;
-}
-p{
-	color: black;
 }
 
 hr.bold {
@@ -988,7 +985,6 @@ a.btn:focus{
 }
 #btnSi, #btnNo{
 	width: 50px;
-	
 }
 /* Media queries */
 
@@ -1112,6 +1108,7 @@ a.btn:focus{
 }
 
 .informacion{
+	visibility: hidden;
 	position: absolute;
 	background-color: #f9f9f9;
 	border-radius: 14px;
@@ -1121,11 +1118,10 @@ a.btn:focus{
 	top: 70px;
 	box-shadow: 5px 5px 8px gray;
 	color: gray;
-	display: none;
 }
-.informacion hr {border: 0; border-top: .5px solid gray; border-bottom: .5px solid gray;width: 200px;margin-left: 63px;margin-top: -2px; }
+.informacion hr {border: 0; border-top: .5px solid gray; border-bottom: .5px solid gray;width: 200px;margin-left: 63px;margin-top: -2px;}
 #dow {border: 0; border-top: .5px solid gray; border-bottom: .5px solid gray;width: 290px;margin-top: 10px;margin-left: 15px;}
-.informacion .imagen{
+.informacion img{
 	margin-top: -25px;
 	width: 140px;
 	height: 140px;
@@ -1157,13 +1153,13 @@ a.btn:focus{
 .informacion .precio h4{
 	font-size: 15px;
 	margin-top: 0px;
-	margin-left: 20px;
+	margin-left: 15px;
 	margin-bottom: 7px;
 }
 .informacion .precio h3{
 	font-size: 14px;
 	margin-top: -23px;
-	margin-left: 190px;
+	margin-left: 180px;
 	margin-bottom: -38px;
 }
 .informacion h5{
@@ -1189,15 +1185,11 @@ a.btn:focus{
 .precio{
 	width: 250px;
 	height: 70px;
-	margin-left: 40px;
-	margin-top: -20px;
+	margin-left: 35px;
 	background-color: #fff;
+	margin-top: -20px;
 	border-radius: 5px;
 	border:solid .001em;
-	overflow:auto;
-}
-.precio td,th{
-	padding:3px;
 }
 #total{
 	font-size: 23px;
@@ -1208,10 +1200,167 @@ a.btn:focus{
 	font-size: 26px;
 	margin-top: -25px;
 	margin-left: 100px;
-	z-index: 1;
 }
 .informacion button{
 	position: absolute;
 	left: 220px;
 	top: 260px;
 }
+
+#table_compra{
+	font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#table_compra a{
+	margin-top: 40px;
+	margin-left: 615px;
+}
+
+table{
+	width: 400px;
+    border-collapse: collapse;
+    margin-left: 500px;
+}
+
+table, th, td {
+	padding:15px;
+    color:#fff;
+    text-shadow:1px 1px 1px #F6323E;
+    border:1px solid #fff;
+    border-bottom:3px solid #fff;
+    background-color:#F6323E;
+    
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+
+
+/*------MODAL LOGIN ------
+.modalmask {
+	position: fixed;
+	font-family: Arial, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalmask:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalbox{
+	width: 400px;
+	position: relative;
+	padding: 5px 20px 13px 20px;
+	background: #fff;
+	border-radius:3px;
+	-webkit-transition: all 500ms ease-in;
+	-moz-transition: all 500ms ease-in;
+	transition: all 500ms ease-in;
+	
+}
+
+.movedown {
+	margin: 0 auto;
+}
+.rotate {
+	margin: 10% auto;
+	-webkit-transform: scale(-5,-5); 
+	transform: scale(-5,-5);
+}
+.resize {
+	margin: 10% auto;
+	width:0;
+	height:0;
+
+}
+.modalmask:target .movedown{		
+	margin:10% auto;
+}
+.modalmask:target .rotate{		
+	transform: rotate(660deg) scale(1,1);
+    -webkit-transform: rotate(660deg) scale(1,1);
+}
+
+.modalmask:target .resize{
+	width:400px;
+	height:200px;
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 1px;
+	text-align: center;
+	top: 1px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius:3px;
+	font-size:16px;
+}
+
+.close:hover { 
+	background: #FAAC58; 
+	color:#222;
+}
+*/
+
+#login{
+	position: absolute;
+	left: 620px;
+	top: 50px;
+	width: 260px;
+	height: 340px;
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	box-shadow: 5px 5px 8px gray;
+	color: gray;
+}
+#bt{
+	margin-top: 10px;
+}
+#login a{
+	margin-left: 40px;
+}
+#login button{
+	width: 230px;
+	height: 35px;
+	background: blue;
+	border-radius: 8px;
+	margin-left: 15px;
+	color: #fff;
+}
+#login input{
+	margin-left: 15px;
+	border-radius: 1px;
+	width: 230px;
+	color: gray;
+	margin-bottom: 30px;
+}
+
+.tri{
+	position: absolute;
+	left: 770px;
+	top: 33px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #f9f9f9;
+}
+#login hr {border: 0; border-top: .1px solid gray; border-bottom: .1px solid gray;width: 235px;margin-left: 10px;}
