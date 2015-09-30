@@ -82,5 +82,10 @@
 		$('#myModal').modal('toggle');
 	});	
 
-	
+	function HiddenFunction() {
+		document.getElementById("inf").style.visibility = "hidden";
+	}
+	function VisibleFunction() {
+		document.getElementById("inf").style.visibility = "visible";
+	}
 })(jQuery);
