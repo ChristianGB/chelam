@@ -14,6 +14,10 @@
 Route::get('/', 'HomeController@index');
 Route::get('chelas', 'HomeController@chelasView');
 Route::get('chelapack', 'HomeController@chelaPackView');
+Route::get('registrar', 'HomeController@registrarUsuario');
+
+//Creación de usuario
+Route::post('crearusuario', 'UserController@crearUsuario');
 
 /*
 Route::controllers([
