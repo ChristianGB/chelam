@@ -59,7 +59,6 @@
               <a href="/"><img src="img/chelas/logovert_color.png" class="miniLogo"></a>
             </div>
           </div>
-
           <div class="col-md-10">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
@@ -75,9 +74,9 @@
                 <li><a href="mayoreo">Mayoreo</a></li>
                 <li><a href="#works">Membresias</a></li>
                 <li><a href="#contact">Preguntas Frecuentes</a></li>
-                <li><a href="#">Iniciar sesión</a></li>
-                <div class="tri"></div>
-                <div class="login" id="login">
+                <li><a href="#" onmouseover="Visible()">Iniciar sesión</a></li>
+                <div class="login" id="login" onmouseover="Visible()" onmouseout="Hidden()">
+                  <div class="tri"></div>
                   <button id="bt">facebook</button>
                   <hr>
                   <input placeholder="Email">
@@ -102,17 +101,17 @@
                   <div class="precio">
                     <table align="center">
                       <tr>
-                        <td><img src="img/x.png"></td>
+                        <th><img src="img/x.png"></td>
                         <th>Amnecia</th>
                         <td>1 x $65</td>
                       </tr>
                       <tr>
-                        <td><img src="img/x.png"></td>
+                        <th><img src="img/x.png"></td>
                         <th>Trepadora</th>
                         <td>1 x $65</td>
                       </tr>
                       <tr>
-                        <td><img src="img/x.png"></td>
+                        <th><img src="img/x.png"></td>
                         <th>Tzotzil</th>
                         <td>1 x $65</td>
                       </tr>
@@ -121,7 +120,6 @@
                   <hr id="dow">
                   <div id="total">Total:</div>
                   <div class="valor">$195.00</div>
-                  <button>Comprar</button>
                 </div>
               </ul>
             </div>
