@@ -40,7 +40,7 @@ class HomeController extends Controller {
 		return view('chelapack');
 	}
 
-<<<<<<< HEAD
+
 	public function listaComprasView(){
 		return view('listaCompras');
 	}
@@ -51,10 +51,10 @@ class HomeController extends Controller {
 
 	public function loginView(){
 		return view('login');
-=======
+	}
 	public function registrarUsuario(){
 		return view('registrar');
->>>>>>> origin/master
+
 	}
 
 }

@@ -102,7 +102,6 @@
 						<p>
 						Escoje las cervezas que quieras de nuestro gran almacen de cervezas con el que contamos con los distintos sabores que a ti te gustan.
 						</p>
-						<input type="button" id="button" value="Mostrar Ventana" />
 					</div>
                 </div>
 				</div>
