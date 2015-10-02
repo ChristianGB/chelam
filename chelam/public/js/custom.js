@@ -1,7 +1,5 @@
 /*global jQuery:false */
-(function ($) {
-
-
+$(document).ready(function(){
 	$(window).load(function(){
       $("#navigation").sticky({ topSpacing: 0 });
     });
@@ -68,8 +66,9 @@
 			jQuery('.nav li').removeClass('active');
 			jQuery(".nav a[href='#" + id + "']").parent().addClass("active");					
 		});
+
 	$('#myModal').modal({backdrop: 'static', keyboard: false});
-	$('#modal').on('show.bs.modal', function () {
+	$('#myModal').on('show.bs.modal', function () {
        $(this).find('.modal-body').css({
               width:'auto', //probably not needed
               height:'auto', //probably not needed 
@@ -77,10 +76,13 @@
        });
 	});
 
-
-	$("#btnSi").click(function(){
-		$('#myModal').modal('toggle');
-	});	
-
-	
-})(jQuery);
+	if ($.cookie('modal_Showss') != null) {
+		$('#myModal').modal('hide');
+	}else{
+		$.cookie('modal_Showss', 'yes', { expires: 7, path: '/' });
+		$('#myModal').modal('show');
+		$("#btnSi").click(function(){
+			$('#myModal').modal('toggle');
+		});
+	}
+});

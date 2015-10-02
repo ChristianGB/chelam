@@ -37,6 +37,7 @@
 	<script src="js/jquery.appear.js"></script>
 	<script src="js/stellar.js"></script>
 	<script src="js/nivo-lightbox.min.js"></script>
+	<script src="js/jquery-cookie-master/src/jquery.cookie.js"></script>
 	
     <script src="js/custom.js"></script>
 	<script src="js/css3-animate-it.js"></script>

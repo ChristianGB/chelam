@@ -25,7 +25,7 @@
 	
 
 	<!-- Modal -->
-	<div id="myModal" class="modal modal-wide fade in text-center" role="dialog">
+	<div id="myModal" class="modal modal-wide text-center" role="dialog">
 	  <div class="modal-dialog">
 
 	    <!-- Modal content-->
