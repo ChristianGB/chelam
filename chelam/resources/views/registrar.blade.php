@@ -16,14 +16,16 @@
 								<div class="col-md-6 xs-marginbot-20">
 								</div>
 								<div class="col-md-6">
-                  <h1 class="">Ingresa</h1>
+                  					<h1 class="">Ingresa</h1>
 									<input type="text" class="form-control input-lg" id="username" placeholder="Usuario" required="required" name="userName"/>
-                  <input type="email" class="form-control input-lg" id="email" placeholder="Email" required="required" name="password"/>
-                  <input type="password" class="form-control input-lg" id="password" placeholder="Contraseña" required="required" name="email"/>
-                  <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                  <input type="hidden" name="_token" value="{!! csrf_token() !!}">
-                  <input type="hidden" name="_token" value="<?php echo csrf_token() ?>">
-                  <input type="submit" class="btn btn-skin btn-block">
+				                  	<input type="email" class="form-control input-lg" id="email" placeholder="Email" required="required" name="email"/>
+				                  	<input type="password" class="form-control input-lg" id="password" placeholder="Contraseña" required="required" name="password"/>
+
+
+				                  	<input type="hidden" name="_token" value="{{ csrf_token() }}">
+				                  	<input type="hidden" name="_token" value="{!! csrf_token() !!}">
+				                  	<input type="hidden" name="_token" value="<?php echo csrf_token() ?>">
+				                  	<input type="submit" class="btn btn-skin btn-block">
 								</div>
 							</div>
 						</form>

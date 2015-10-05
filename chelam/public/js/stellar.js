@@ -7,18 +7,7 @@
  * http://markdalgleish.mit-license.org
  */
 
- function HiddenFunction() {
- 	document.getElementById("inf").style.visibility = "hidden";
- }
- function VisibleFunction() {
- 	document.getElementById("inf").style.visibility = "visible";
- }
- function Hidden() {
- 	document.getElementById("login").style.visibility = "hidden";
- }
- function Visible() {
- 	document.getElementById("login").style.visibility = "visible";
- }
+ 
 
 (function($, window, document, undefined) {
 

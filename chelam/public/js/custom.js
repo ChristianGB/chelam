@@ -76,13 +76,38 @@ $(document).ready(function(){
        });
 	});
 
-	if ($.cookie('modal_Showss') != null) {
+	if ($.cookie('modal_Showsss') != null) {
 		$('#myModal').modal('hide');
 	}else{
-		$.cookie('modal_Showss', 'yes', { expires: 7, path: '/' });
+		$.cookie('modal_Showsss', 'yes', {path: '/' });
 		$('#myModal').modal('show');
 		$("#btnSi").click(function(){
 			$('#myModal').modal('toggle');
 		});
 	}
+
+	$("#iniciaeS").mouseenter(function(){
+		$(".login").css("display","block");
+	}).mouseleave(function(){
+		$(".login").css("display","none");
+		
+	});
+	$("#login").mouseenter(function(){
+		$(".login").css("display","block");
+	}).mouseleave(function(){
+		$(".login").css("display","none");
+		
+	});
+
+	$("#carrito").mouseenter(function(){
+		$(".informacion").css("display","block");
+	}).mouseleave(function(){
+		$(".informacion").css("display","none");
+		
+	});
+	$(".informacion").mouseenter(function(){
+		$(".informacion").css("display","block");
+	}).mouseleave(function(){
+		$(".informacion").css("display","none");
+	});
 });

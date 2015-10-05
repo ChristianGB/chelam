@@ -80,7 +80,7 @@ h1.font-light,h2.font-light,h3.font-light,h4.font-light,h5.font-light,h6.font-li
 
 p {
     margin: 0 0 20px;
-
+    color: #636362;
 }
 
 p.lead {
@@ -299,7 +299,7 @@ hr.bold {
 	height: 2px;
 	margin: 0 auto;
 	margin-bottom: 10px;
-	color: #FF0033;
+	color: red;
 	background-color: #FF0033;
 }
 
@@ -371,7 +371,7 @@ hr.bold {
 }
 
 .color-dark .section-heading h2 {
-	color: #111;
+	color: #1C4E9D;
 }
 .color-dark .section-heading p {
 	color: #444;
@@ -594,15 +594,8 @@ hr.bold {
 ============================ */
 .service-box {
 	background: #fff;
-	border-bottom: 2px solid #f7f7f7;
+	border-bottom: 2px solid #1C4E9D;
 	padding: 40px 20px;
-}
-
-.service-box:hover {
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-	margin-top: -20px;
 }
 
 .service-icon {
@@ -618,6 +611,7 @@ hr.bold {
 }
 .service-desc .divider-header {
 	margin-bottom: 30px;
+	background-color: #E73742;
 }
 
 #owl-works {
@@ -1017,8 +1011,8 @@ a.btn:focus{
     }
     .logos{
 		margin-top: -160px;
-		width: 200;
-		height:260px;
+		width: 300;
+		height:360px;
 	}
 }
 @media (max-width:768px) {
@@ -1089,8 +1083,8 @@ a.btn:focus{
 	}
 	.logos{
 		margin-top: -160px;
-		width: 200;
-		height:260px;
+		width: 250;
+		height:310px;
 	}
 	.miniLogo{
 		width: 150px;
@@ -1102,7 +1096,7 @@ a.btn:focus{
 
 
 .informacion{
-	visibility: hidden;
+	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
 	border-radius: 14px;
@@ -1111,7 +1105,10 @@ a.btn:focus{
 	left: 650px;
 	top: 70px;
 	box-shadow: 5px 5px 8px gray;
-	color: gray;}
+	color: gray;
+	z-index: 9999;
+
+}
 
 .dec {
 	position: absolute;
@@ -1290,37 +1287,40 @@ a.btn:focus{
 */
 
 #login{
-	visibility: hidden;
+	display: none;
 	position: absolute;
 	left: 620px;
 	top: 50px;
 	width: 260px;
-	height: 340px;
+	height: 240px;
 	background-color: #f9f9f9;
 	border-radius: 10px;
 	box-shadow: 5px 5px 8px gray;
 	color: gray;
+	z-index: 9999;
+	text-align: center;
 }
 #bt{
 	margin-top: 10px;
 }
 #login a{
-	margin-left: 40px;
+	margin-left:-5px;
 }
+
 #login button{
 	width: 230px;
 	height: 35px;
 	background: #1C4E9D;
 	border-radius: 8px;
-	margin-left: 15px;
+	margin-left: 5px;
 	color: #fff;
 }
 #login input{
-	margin-left: 15px;
-	border-radius: 1px;
+	margin-left: 5px;
+	border-radius: 7px;
 	width: 230px;
 	color: gray;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .tri{
@@ -1332,3 +1332,58 @@ a.btn:focus{
     border-bottom: 30px solid #f9f9f9;
 }
 #login hr {border: 0; border-top: .1px solid gray; border-bottom: .1px solid gray;width: 235px;margin-left: 10px;}
+.botonRegistrar{
+	margin-left: -100px;
+}
+.comoImg1{
+	width: 100px;
+	height: 100px;
+	background-color: #1C4E9D;
+	margin: 0 auto;
+	display: flex;
+  	justify-content: center;
+  	border-radius: 100px;
+}
+.imgImg{
+	background-repeat: no-repeat;
+	width: 70px;
+	height: 70px;
+	display: absolute;
+	align-self: center;
+	background-size: 100%;
+	margin: 0 auto;
+}
+#imgSesion{
+	background-image: url("../img/chelas/sesion.png");
+}
+#imgPedido{
+	background-image: url("../img/chelas/arma_pedido.png");
+	background-size: 60%;
+	margin-left: 30px;
+}
+#imgCarrito{
+	background-image: url("../img/chelas/carrito.png");
+}
+#imgCamion{
+	background-image: url("../img/chelas/pedido.png");
+	background-size: 100%;	
+	margin-top: 30px;
+}
+#imgChela{
+	background-image: url("../img/chelas/disfruta.png");
+	background-size: 45%;
+	margin-left: 30px;
+	
+}
+.comoComprarbottom{
+	width: 35%;
+	margin-top: 20px;
+	
+}
+.container1{
+	margin-right: 190px;
+}
+.imgChelamColor{
+	width: 50%;
+	margin: 0 auto;
+}

@@ -23,8 +23,13 @@ Route::get('registrar', 'HomeController@registrarUsuario');
 
 //Creación de usuario
 Route::post('crearusuario', 'UserController@crearUsuario');
+Route::get('olvidarSesion', 'UserController@olvidarSesion');
 
 
+//identificar usuario
+Route::post('identifcar', 'UserController@identificarUsuario');
+
+	
 /*
 Route::controllers([
 	'auth' => 'Auth\AuthController',
