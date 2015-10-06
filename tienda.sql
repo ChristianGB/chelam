@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-10-2015 a las 17:24:26
+-- Tiempo de generación: 06-10-2015 a las 20:56:58
 -- Versión del servidor: 5.6.26
 -- Versión de PHP: 5.6.12
 
@@ -19,6 +19,34 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `tienda`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `cervezas`
+--
+
+CREATE TABLE IF NOT EXISTS `cervezas` (
+  `idCerveza` int(11) NOT NULL,
+  `idProducto` int(11) NOT NULL,
+  `Nombre` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
+  `Descripcion` varchar(255) COLLATE utf8_spanish2_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `cervezas`
+--
+
+INSERT INTO `cervezas` (`idCerveza`, `idProducto`, `Nombre`, `Descripcion`) VALUES
+(1, 1, 'Amnesia Nocturna', ''),
+(2, 2, 'Apophis Imperialstout', ''),
+(3, 3, 'Trepadora Ipa', ''),
+(4, 4, 'Trepadora Redale', ''),
+(5, 5, 'Tzotzil Ambar', ''),
+(6, 6, 'Tzotzil Lager', ''),
+(7, 7, 'Tzotzil Miel', ''),
+(8, 8, 'Tzotzil Porter', ''),
+(9, 9, 'Tzotzil Stoutcafe', '');
 
 -- --------------------------------------------------------
 
@@ -85,7 +113,7 @@ INSERT INTO `migrations` (`migration`, `batch`) VALUES
 
 CREATE TABLE IF NOT EXISTS `objeto` (
   `idObjeto` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 --
 -- Volcado de datos para la tabla `objeto`
@@ -97,7 +125,16 @@ INSERT INTO `objeto` (`idObjeto`) VALUES
 (3),
 (4),
 (5),
-(6);
+(6),
+(7),
+(8),
+(9),
+(10),
+(11),
+(12),
+(13),
+(14),
+(15);
 
 -- --------------------------------------------------------
 
@@ -142,7 +179,22 @@ CREATE TABLE IF NOT EXISTS `producto` (
   `idProducto` int(11) NOT NULL,
   `idObjeto` int(11) NOT NULL,
   `idTipoProducto` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `producto`
+--
+
+INSERT INTO `producto` (`idProducto`, `idObjeto`, `idTipoProducto`) VALUES
+(1, 7, 1),
+(2, 8, 1),
+(3, 9, 1),
+(4, 10, 1),
+(5, 11, 1),
+(6, 12, 1),
+(7, 13, 1),
+(8, 14, 1),
+(9, 15, 1);
 
 -- --------------------------------------------------------
 
@@ -176,7 +228,14 @@ CREATE TABLE IF NOT EXISTS `tipocliente` (
 CREATE TABLE IF NOT EXISTS `tipoproducto` (
   `idTipoProducto` int(11) NOT NULL,
   `Nombre` varchar(255) COLLATE utf8_spanish2_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `tipoproducto`
+--
+
+INSERT INTO `tipoproducto` (`idTipoProducto`, `Nombre`) VALUES
+(1, 'cerveza');
 
 -- --------------------------------------------------------
 
@@ -239,6 +298,12 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `cervezas`
+--
+ALTER TABLE `cervezas`
+  ADD PRIMARY KEY (`idCerveza`);
 
 --
 -- Indices de la tabla `cliente`
@@ -333,6 +398,11 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `cervezas`
+--
+ALTER TABLE `cervezas`
+  MODIFY `idCerveza` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
+--
 -- AUTO_INCREMENT de la tabla `cliente`
 --
 ALTER TABLE `cliente`
@@ -351,7 +421,7 @@ ALTER TABLE `empresa`
 -- AUTO_INCREMENT de la tabla `objeto`
 --
 ALTER TABLE `objeto`
-  MODIFY `idObjeto` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+  MODIFY `idObjeto` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT de la tabla `pedido`
 --
@@ -366,7 +436,7 @@ ALTER TABLE `persona`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `idProducto` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idProducto` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT de la tabla `productopedido`
 --
@@ -381,7 +451,7 @@ ALTER TABLE `tipocliente`
 -- AUTO_INCREMENT de la tabla `tipoproducto`
 --
 ALTER TABLE `tipoproducto`
-  MODIFY `idTipoProducto` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idTipoProducto` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
