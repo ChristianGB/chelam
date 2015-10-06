@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('chelas', 'HomeController@chelasView');
+Route::get('chelas', 'CervezaController@getAllCervezas');
 Route::get('chelapack', 'HomeController@chelaPackView');
 
 Route::get('listaCompras', 'HomeController@listaComprasView');

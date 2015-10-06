@@ -1387,3 +1387,9 @@ a.btn:focus{
 	width: 50%;
 	margin: 0 auto;
 }
+.cervezasChelas{
+	width: 80px;
+	height: 220px;
+	z-index: 9999;
+	margin-bottom: 50px;
+}

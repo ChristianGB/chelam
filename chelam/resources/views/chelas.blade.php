@@ -83,94 +83,26 @@
                 <div class="col-sm-12 col-md-12 col-lg-12" >
 
                     <div class="row gallery-item">
-                        <div class="col-md-3 animated fadeInUp">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg" >
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
+                        
+							<?php
 
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp slow">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp slower">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg" >
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
+                			foreach ($allCervezas as $key) {
+                			?>
+                			<div class="col-md-3">
+								<a href="img/Cervezas/<?php echo $key->Nombre ?>.png" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg" class="cervezasChelas">
+									<img src="img/Cervezas/<?php echo $key->Nombre ?>.png" class="img-responsive cervezasChelas" alt="img">
 
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp slow">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp slower">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg" >
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
+								</a>
+							</div>
+		                	<?php
+		                	}
+		                	?>
 
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp slow">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp slower">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg" >
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
-
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp slow">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp slower">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3 animated fadeInUp">
-							<a href="img/chelas/cerveza1.jpg" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/chelas/cerveza1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
 					</div>
 	
                 </div>
             </div>	
+
 		</div>
 
 	</section>
