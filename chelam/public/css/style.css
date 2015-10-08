@@ -1485,6 +1485,7 @@ a.btn:focus{
 }
 
 #historial_com table{
+	border-collapse: collapse;
 	border-collapse: separate;
-  	border-spacing: 40px 0px;
+  	border-spacing: 40px 10px;
 }

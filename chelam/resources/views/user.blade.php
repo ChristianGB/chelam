@@ -9,6 +9,7 @@
 	<h2>Datos de Compra</h2>
 	<p>Cambiar contraseña</p>
 </div>
+
 <div id="historial_com">
 	<div id="h1">
 		<h1>Historial de Compras</h1>
@@ -21,9 +22,6 @@
 			<th>Costo</th>
 			<th>Estatus</th>
 		</tr>
-	</table>
-	<hr>
-	<table>
 		<tr>
 			<th>01/09/2015</th>
 			<th>
@@ -37,9 +35,6 @@
 			<th>$ 390.00</th>
 			<th>Entregado</th>
 		</tr>
-		</table>
-		<hr>
-		<table>
 		<tr>
 			<th>05/09/2015</th>
 			<th>
