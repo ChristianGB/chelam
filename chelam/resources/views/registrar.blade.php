@@ -13,10 +13,12 @@
 						
 						<form id="contact-form" action="crearusuario" method="post">
 							<div class="row marginbot-20">
-								<div class="col-md-6 xs-marginbot-20">
-								</div>
+								<p id="texto">Registrate y Vive la Experiencia Chelam</p>
+								<div class="col-md-6 xs-marginbot-20"></div>
+								<div id="registro"></div>
 								<div class="col-md-6">
-                  					<h1 class="">Ingresa</h1>
+									<button type="submit" id="bt_face">Login</button>
+									<hr>
 									<input type="text" class="form-control input-lg" id="username" placeholder="Usuario" required="required" name="userName"/>
 				                  	<input type="email" class="form-control input-lg" id="email" placeholder="Email" required="required" name="email"/>
 				                  	<input type="password" class="form-control input-lg" id="password" placeholder="Contraseña" required="required" name="password"/>

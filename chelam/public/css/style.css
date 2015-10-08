@@ -1393,3 +1393,51 @@ a.btn:focus{
 	z-index: 9999;
 	margin-bottom: 40px;
 }
+#registro{
+	position: absolute;
+	left: 450px;
+	top: -80px;
+	width: 430px;
+	height: 380px;
+	background: #000066;
+	opacity: 0.6;
+	border-radius: 6px;
+}
+.col-md-6{
+	margin-top: -40px;
+	margin-left: 470px;
+}
+
+ #bt_face{
+    padding-right: 45px;
+    height: 35px;
+    background: none;
+    border: none;
+    display: block;
+    background-size: 35px 35px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    color: white;
+    font-family:"Merriweather Sans", sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+    width: 205px;
+    border-bottom: 2px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+#bt_face{
+	margin-left: 80px;
+	border-color: #2d5073;
+    background-color: #3b5998;
+    background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
+}
+
+.col-md-6 input{
+	margin-bottom: 10px;
+}
+#texto{
+	margin-top: -150px;
+	margin-left: 550px;
+}
