@@ -29,6 +29,9 @@ Route::get('olvidarSesion', 'UserController@olvidarSesion');
 //identificar usuario
 Route::post('identifcar', 'UserController@identificarUsuario');
 
+
+Route::get('user', 'HomeController@userView');
+
 	
 /*
 Route::controllers([

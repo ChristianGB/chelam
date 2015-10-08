@@ -54,7 +54,9 @@ class HomeController extends Controller {
 	}
 	public function registrarUsuario(){
 		return view('registrar');
-
+	}
+	public function userView(){
+		return view('user');
 	}
 
 }
