@@ -1496,3 +1496,17 @@ a.btn:focus{
 	margin-top: -330px;
 	margin-left: 450px;
 }
+
+#lista{
+	margin-left: 400px;
+	width: 40%;
+}
+
+#confirmar_pedido{
+	margin-left: 550px;
+}
+#compras h1{
+	margin-top: 30px;
+	margin-left: 460px;
+	margin-bottom: 60px;
+}
