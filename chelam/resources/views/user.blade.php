@@ -7,7 +7,7 @@
 	<h5>yelow melo</h5>
 	<hr>
 	<h2>Datos de Compra</h2>
-	<p>Cambiar contraseña</p>
+	<a href="">Cambiar contraseña</a>
 </div>
 
 <div id="table">
