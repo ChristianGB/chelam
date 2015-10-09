@@ -1510,3 +1510,52 @@ a.btn:focus{
 	margin-left: 460px;
 	margin-bottom: 60px;
 }
+.infoUser{
+	background-color: red;
+	
+
+}
+.tableUser{
+	background-color: yellow;
+}
+.imgUser{
+	background-repeat: no-repeat;
+	width: 170px;
+	height: 170px;
+	display: absolute;
+	align-self: center;
+	background-size: 100%;
+	margin: 0 auto;
+}
+.comoImg1{
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	margin-top: -100px;
+}
+.nombreUser{
+	color: #636362;
+}
+.hdCompras{
+	color: #1C4E9D;
+	margin-top: -100px;
+}
+.hdComprasHeader{
+	background-color: #E73742;
+}
+th{
+	text-align: center;
+	color: #1C4E9D;
+}
+td{
+	color: #636362;
+}
+.tdLeft{
+	text-align: left;	
+}
+.textRight{
+	text-indent: 1em;
+}
+.ui-helper-center{
+    text-align: center;
+}
