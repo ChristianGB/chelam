@@ -1435,6 +1435,7 @@ a.btn:focus{
 }
 
 .col-md-6 input{
+	border-radius: 35px;
 	margin-bottom: 10px;
 }
 #texto{
@@ -1488,4 +1489,10 @@ a.btn:focus{
 	border-collapse: collapse;
 	border-collapse: separate;
   	border-spacing: 40px 10px;
+}
+
+#table{
+	width: 60%;
+	margin-top: -330px;
+	margin-left: 450px;
 }

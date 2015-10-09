@@ -10,18 +10,17 @@
 	<p>Cambiar contraseña</p>
 </div>
 
-<div id="historial_com">
-	<div id="h1">
-		<h1>Historial de Compras</h1>
-	<hr>
-	</div>
-	<table>
+<div id="table">
+	<table class="table table-bordered">
+	<thead>
 		<tr>
 			<th>Fecha</th>
 			<th>Producto</th>
 			<th>Costo</th>
 			<th>Estatus</th>
 		</tr>
+	</thead>
+	<tbody>
 		<tr>
 			<th>01/09/2015</th>
 			<th>
@@ -45,7 +44,6 @@
 			<th>$ 490.00</th>
 			<th>Pendiente</th>
 		</tr>
-	</table>
+  </table>
 </div>
-
 @include('footer')
