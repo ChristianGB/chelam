@@ -29,8 +29,18 @@ Route::get('olvidarSesion', 'UserController@olvidarSesion');
 //identificar usuario
 Route::post('identifcar', 'UserController@identificarUsuario');
 
+Route::filter('old', function()
+{
+    if (\Session::get("nameUsuarioSesion")==null)
+    {
+        return \Redirect::to('/');
+    }
+});
 
-Route::get('user', 'HomeController@userView');
+Route::get('user', array('before' => 'old', function()
+{
+    return \View::make("user");
+}));
 
 	
 /*

@@ -73,7 +73,7 @@ class UserController extends Controller{
 			}
 			\Session::put("idUsuarioSesion", $user->idUsuario);
 			\Session::put("nameUsuarioSesion", $user->userName);
-			return \Redirect::to("/");
+			return \Redirect::to("user");
 		}catch(Exception $e){
 			return \Redirect::to("/");
 		}
