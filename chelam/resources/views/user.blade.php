@@ -8,7 +8,7 @@
 					<div class="">
 		            <div >
 						<div class="service-icon">
-							<div class="comoImg1">
+							<div class="comoImg2">
 								<div class="imgUser" id="imgSesion"></div>
 							</div>
 						</div>

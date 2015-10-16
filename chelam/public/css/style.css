@@ -165,18 +165,15 @@ blockquote strong {
 
 /* ------- Navigation ------------ */
 #navigation {
-	background: #fff;
 	z-index: 9999;
 	width:100%;
-
-    box-sizing:border-box;
-	border-bottom: 1px solid #eee;
-	box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1);
+	background-image: url("../img/chelas/pleca_sup.jpg");
+	background-size: 7%;
 }
 .miniLogo{
-	width: 150px;
+	width: 220px;
 	height: 50px;
-	margin-left: -70px;
+	margin-left: -40px;
 	margin-top: -10px;
 }
 
@@ -194,18 +191,18 @@ blockquote strong {
 }
 
 .nav.navbar-nav {
-    background-color: rgba(255,255,255,.6);
+    
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
-    background-color: rgba(0,0,0,0);
+    
 }
 
 
 .navbar-custom ul.nav li a {
 	font-size: 12px;
 	letter-spacing: 1px;
-    color: #444;
+    color: white;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -214,7 +211,7 @@ blockquote strong {
 	-webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-	color: #fff;
+	
 }
 
 .navbar-custom ul.nav ul.dropdown-menu {
@@ -249,7 +246,7 @@ blockquote strong {
 
 
 .navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
-	color: #666;
+	
 }
 
 .navbar-custom .nav li a {
@@ -262,20 +259,20 @@ blockquote strong {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
-    background-color: rgba(255,255,255,.2);
-    color: red;
+    
+    
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
-    background-color: rgba(255,255,255,.2);
+    
 }
 
 .navbar-toggle {
     padding: 4px 6px;
     font-size: 14px;
-    color: #fff;
+    
 }
 
 .navbar-toggle:focus,
@@ -611,7 +608,7 @@ hr.bold {
 }
 .service-desc .divider-header {
 	margin-bottom: 30px;
-	background-color: #E73742;
+	background-color: #BCBCBC;
 }
 
 #owl-works {
@@ -796,6 +793,7 @@ form.search-form input:focus {
 
 footer {
     background-color: #FF0033;
+    
 }
 
 footer {
@@ -993,7 +991,7 @@ a.btn:focus{
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        
     }
 	
     .intro {
@@ -1338,7 +1336,7 @@ a.btn:focus{
 .comoImg1{
 	width: 100px;
 	height: 100px;
-	background-color: #1C4E9D;
+	background-color: #BCBCBC;
 	margin: 0 auto;
 	display: flex;
   	justify-content: center;
@@ -1525,7 +1523,7 @@ a.btn:focus{
 	background-size: 100%;
 	margin: 0 auto;
 }
-.comoImg1{
+.comoImg2{
 	width: 250px;
 	height: 250px;
 	border-radius: 100%;
@@ -1569,4 +1567,17 @@ td{
 	background-color: #E73742;
 	color: white;
 	width: 300%;
+}
+.cajaComo:hover{
+	cursor: pointer;
+
+}
+
+.cajaComo:hover .comoImg1{
+	background-color: #1C4E9D;
+
+}
+.cajaComo:hover .divider-header{
+	background-color: #E73742;
+
 }

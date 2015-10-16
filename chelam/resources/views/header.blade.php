@@ -57,7 +57,7 @@
           <div class="col-md-2">
             <div class="site-logo">
               <!--<a href="index.html" class="brand">CHELAM</a>-->
-              <a href="/"><img src="img/chelas/logovert_color.png" class="miniLogo"></a>
+              <a href="/"><img src="img/chelas/tipo_blc.png" class="miniLogo"></a>
             </div>
           </div>
           <div class="col-md-10">

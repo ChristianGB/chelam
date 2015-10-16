@@ -86,9 +86,9 @@
 		<div class="container">
 
         <div class="row ">
-            <div class="col-xs-6 col-sm-4 col-md-4">
+            <div class="col-xs-6 col-sm-4 col-md-4 cajaComo">
 				<div class="">
-                <div class="service-box">
+                
 					<div class="service-icon">
 						<div class="comoImg1">
 							<div class="imgImg" id="imgSesion"></div>
@@ -102,11 +102,11 @@
 						</p>
 					</div>
                 </div>
-				</div>
+				
             </div>
-			<div class="col-xs-6 col-sm-4 col-md-4">
+			<div class="col-xs-6 col-sm-4 col-md-4 cajaComo">
 				<div class="animated slow">
-                <div class="service-box">
+                
 					<div class="service-icon">
 						<div class="comoImg1">
 							<div class="imgImg" id="imgPedido"></div>
@@ -121,11 +121,11 @@
 						
 					</div>
                 </div>
-				</div>
+				
             </div>
-			<div class="col-xs-6 col-sm-4 col-md-4">
+			<div class="col-xs-6 col-sm-4 col-md-4 cajaComo">
 				<div class="animated slower">
-                <div class="service-box">
+                
 					<div class="service-icon">
 						<div class="comoImg1">
 							<div class="imgImg" id="imgCarrito"></div>
@@ -139,17 +139,17 @@
 						</p>
 						
 					</div>
-                </div>
+                
 				</div>
             </div>
 
             <div class="container1">
-            	<div class="col-xs-6 col-sm-3 ">
+            	<div class="col-xs-6 col-sm-3">
 				
 		        </div>
-		        <div class="col-xs-6 col-sm-3 comoComprarbottom">
+		        <div class="col-xs-6 col-sm-3 comoComprarbottom cajaComo">
 					<div class="animated slower">
-		            <div class="service-box">
+		            
 						<div class="service-icon">
 							<div class="comoImg1">
 								<div class="imgImg" id="imgCamion"></div>
@@ -163,12 +163,12 @@
 							</p>
 							
 						</div>
-		            </div>
+		            
 					</div>
 		        </div>
-		        <div class="col-xs-6 col-sm-3 comoComprarbottom">
+		        <div class="col-xs-6 col-sm-3 comoComprarbottom cajaComo">
 					<div class="animated slower">
-		            <div class="service-box">
+		            
 						<div class="service-icon">
 							<div class="comoImg1">
 								<div class="imgImg" id="imgChela"></div>
@@ -182,7 +182,7 @@
 							</p>
 							
 						</div>
-		            </div>
+		            
 					</div>
 		        </div>
 		        <div class="col-xs-6 col-sm-3 comoComprarbottom">
@@ -211,39 +211,48 @@
 		</div>
 		<div class="container">
         	<div class="row animatedParent">
-        		<div class="col-xs-6 col-sm-4 col-md-6">
+
+
+        		<div class="col-xs-6 ">
         			<div class="animated slow">
-		                <div class="service-box">
+		                
 							<div class="service-icon">
 								
 							</div>
 							<div class="service-desc">
 								<div class="divider-header"></div>
 								<p>
-								Nuestros cerveceros ya hicieron el trabajo <br> por ti. Da click para ver los chelapacks diseñados <br> para tener una experiencia artesanal inolvidable
+								Nuestros cerveceros ya hicieron el trabajo <br> 
+								por ti. Da click para ver los chelapacks diseñados <br> 
+								para tener una experiencia artesanal inolvidable
 								</p>
 								
 							</div>
-		                </div>
+		                
 					</div>
         		</div>
         		
-				<div class="col-xs-6 col-sm-4 col-md-6">
+				<div class="col-xs-6 ">
         			<div class="animated slow">
-		                <div class="service-box">
+		                
 							<div class="service-icon">
 								
 							</div>
 							<div class="service-desc">
 								<div class="divider-header"></div>
 								<p>
-								Si te sientes preparado, diseña tu chelapack <br> tu mismo, con las cervezas que hayan <br> revolucionado tus sentidos.
+								Si te sientes preparado, diseña tu chelapack <br> 
+								tu mismo, con las cervezas que hayan <br> 
+								revolucionado tus sentidos.
 								</p>
 								
 							</div>
-		                </div>
+		                
 					</div>
         		</div>
+
+
+
         	</div>
         </div>
 	</section>
