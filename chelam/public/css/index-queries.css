@@ -1,0 +1,34 @@
+@media only screen and (min-width: 900px) {    
+/*    cover */
+    
+    .cover{
+        padding-left: 160px;
+    
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .about-us img{
+        box-sizing: content-box;
+        padding-left: 90px;
+    }
+    .about-us p {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+/* Steps to buy */
+    .steps-to-buy{
+        flex-flow: row wrap;
+    }
+/*    Chelapacks */
+    .chelapacks{
+        width: 100%;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    .chelapackcontainer{
+        margin-bottom: 0;
+    }
+}

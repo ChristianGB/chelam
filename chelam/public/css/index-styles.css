@@ -1,0 +1,185 @@
+/* cover styles */
+
+.cover{
+    width: 100%;
+    height: 100%;
+    
+    background: url(../media/walls/wall5.jpg) no-repeat center;
+    background-size: cover;
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .cover img{
+        width: 80%;
+        max-width: 434px;
+        margin-bottom: 30px;
+    }
+
+    .cover h1 {
+        font-family: 'Dancing Script', Verdana;
+        font-size: 2.2em;
+        text-align: center;
+        text-shadow: 0 3px 5px #3c3c3c;
+        color: white;
+    }
+
+/* About Us */
+.about-us{
+    width: 100%;
+    padding: 60px;
+    background: whitesmoke;
+}
+    .about-us img{
+        width: 50%;
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+    .about-us p{
+        font-weight: lighter;
+        text-align: justify;
+        font-size: 1.2em;
+    }
+
+/* buy */
+.buy{
+    width: 100%;
+    height: 300px;
+    
+    background: url(../media/walls/wall4.jpg) no-repeat center;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .buy .btn{
+        width: 200px;
+        font-size: 1.3em;
+        color: white;
+        border: 2px solid white;
+        transition: all 0.5s;
+    }
+    .buy .btn span{
+        font-weight: bolder;
+    }
+        .buy .btn:hover{
+            background: white;
+            color: #E73742;
+        }
+
+/* how to buy */
+.how-to-buy, .beer-choose{
+    background: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+}
+.how-to-buy > h2, .beer-choose > h2{
+    color: #2C3E50;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+    .how-to-buy > h2::after, .beer-choose > h2::after{
+        content: '';
+        display: block;
+        margin: 5px auto;
+        width: 50px;
+        height: 2px;
+
+        background: #2C3E50;
+    }
+.how-to-buy p, .beer-choose p{
+    font-weight: 300;
+    font-size: 1.1em;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Steps to buy design */
+.steps-to-buy{    
+    display: flex;
+    padding: 20px 0;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+    .step-to-buy{
+        width: 80%;
+        max-width: 400px;
+        height: 300px;
+        margin: 15px;
+
+        overflow: hidden;
+        
+        padding: 30px;
+        position: relative;
+        background: white;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
+        text-align: center;
+    }
+        .step-to-buy .step-img{    
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            margin-bottom: 20px;
+            background: #1C4E9D;
+            border-radius: 50%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .step-img img{
+                max-width:60%;
+                max-height:70%;
+            }
+        .step-to-buy h3{
+            color: #2C3E50;
+            font-size: 1.4em;
+            font-weight: 700;
+            
+            margin-bottom: 30px;
+        }
+            .step-to-buy h3::after{
+                content: '';
+                display: block;
+                margin: 5px auto;
+                width: 70px;
+                height: 3px;
+            }
+    .step-to-buy:hover .step-img, .step-to-buy h3::after{
+        background: #E73742;
+    }
+
+/* beer choose {some styles shared with steps to buy } */
+.beer-choose{
+    background: white;
+}
+.chelapacks{
+    display: flex;
+    width: 80%;
+    margin: 2em auto;
+    
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+}
+
+    .chelapack-container{
+        margin-bottom: 30px;
+        max-width: 500px;
+    }
+        .chelapack-img{
+            width: 100%;
+            height: 200px;
+
+            margin-bottom: 20px;
+
+            background: teal;
+        }

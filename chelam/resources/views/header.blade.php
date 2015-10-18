@@ -4,31 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <script href="" type="text/javascript"></script>
-    <script href="js.js" type="text/javascript"></script>
-	
-    <!-- css -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-	  <link href="css/nivo-lightbox.css" rel="stylesheet" />
-    <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
-    <link href="css/animations.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet">
-    <link href="color/default.css" rel="stylesheet">
+
+    <title>Chelam | Cervezas artesanales</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index-styles.css">
+    <link rel="stylesheet" href="css/main-queries.css">
+    <link rel="stylesheet" href="css/index-queries.css">
+    
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/animations.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/chelas/imago_color.png"/>
 </head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+<!-- <body id="page-top" data-spy="scroll" data-target=".navbar-custom"> -->
 	<!-- Trigger the modal with a button -->
-	
-
 	<!-- Modal -->
-	<div id="myModal" class="modal modal-wide text-center" role="dialog">
+	<!-- <div id="myModal" class="modal modal-wide text-center" role="dialog">
 	  <div class="modal-dialog">
-
-	    <!-- Modal content-->
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <h4 class="modal-title">¿Eres mayor de edad?</h4>
@@ -46,113 +42,48 @@
 	        </div>
 	      </div>
 	    </div>
-
 	  </div>
-	</div>
-	<div id="navigation">
+	</div> -->
 
-    <nav class="navbar navbar-custom" role="navigation">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="site-logo">
-              <!--<a href="index.html" class="brand">CHELAM</a>-->
-              <a href="/"><img src="img/chelas/tipo_blc.png" class="miniLogo"></a>
-            </div>
-          </div>
-          <div class="col-md-10">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-                <i class="fa fa-bars"></i>
-              </button>
-            </div>
-
-            <!--Menu-->
-            <div class="collapse navbar-collapse" id="menu">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="chelas">Chelas</a></li>
-                <li><a href="chelapack">Chelapack</a></li>
-                <li><a href="mayoreo">Mayoreo</a></li>
-                <li><a href="#works">Membresias</a></li>
-                <?php
-                if (\Session::get("idUsuarioSesion")==null) {
-                  ?>
-                  <li><a href="#" id="iniciaeS">Iniciar sesión</a></li>
-                  <div class="login" id="login">
-                    
-                    <form action="identifcar" method="post">
-                      <input type="text" placeholder="Email" name="email">
-                      <input type="password" placeholder="Contraseña" name="password">
-                      <button type="submit" id="bt">Iniciar Sesión</button>
-                      <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                      <input type="hidden" name="_token" value="{!! csrf_token() !!}">
-                      <input type="hidden" name="_token" value="<?php echo csrf_token() ?>">
-                    </form>
-                    <a href="">Recuperar Contraseña</a>
-                    <hr>
-                    <a href="registrar" class="botonRegistrar"><button >Crear cuenta</button></a>
-                  </div>    
-                  <?php
-                }else{
-                  ?>
-                  <li><a href="#"> Bienvenido <?php echo \Session::get("nameUsuarioSesion") ?></a></li>
-                  <li><a href="olvidarSesion">Cerrar sesion</a></li>
-
-                  <?php
-                }
-                ?>
-                
-                <li><a href="listaCompras" id="carrito"><span class="fa fa-shopping-cart fa-2x"></span></a></li>
-                <div class="informacion" id="inf">
-                  <div class="dec"></div>
-                  <h1>Tu Compra</h1>
-                  <hr>
-                  <img src="img/chelas/caja.png" class="imagen" >
-                  <h2>ChelaPack</h2>
-                  <p>Personalizado</p>
-                  <h3>3 de 6 cervezas</h3>
-                  <h4>$195.00</h4>
-                  <h5>Envio incluido a todo México</h5>
-                  <div class="precio">
-                    <table align="center">
-                      <tr>
-                        <th><img src="img/x.png"></td>
-                        <th>Amnecia</th>
-                        <td>1 x $65</td>
-                      </tr>
-                      <tr>
-                        <th><img src="img/x.png"></td>
-                        <th>Trepadora</th>
-                        <td>1 x $65</td>
-                      </tr>
-                      <tr>
-                        <th><img src="img/x.png"></td>
-                        <th>Tzotzil</th>
-                        <td>1 x $65</td>
-                      </tr>
-                    </table>
-                  </div>
-                  <hr id="dow">
-                  <div id="total">Total:</div>
-                  <div class="valor">$195.00</div>
-                </div>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+<header class="main-header">
+    <img src="media/logos/tipo_gris.png" alt="Chelam">
+    <div class="main-nav-btn">
+        <i class="fa fa-bars fa-2x"></i>
+    </div>
+    <nav class="main-nav">
+        <a href="#">Chelas</a>
+        <a href="#">Chelapack</a>
+        <a href="#">Mayoreo</a>
+        <a href="#">Membresias</a>
+        <?php
+        if(\Session::get("nameUsuarioSesion") == null){
+          ?>
+          <a href="#" id="show-login">Iniciar Sesión</a>  
+          <?php
+        }else{
+          ?>
+          <a href="user" id="show-login"><?php echo \Session::get("nameUsuarioSesion") ?></a>
+          <?php
+        }
+        ?>
+        
+        <a href="#"><i class="fa fa-shopping-cart"></i></a>
     </nav>
-  </div> 	
-</div>
-
-<script type="text/javascript">
-<?php
-if (isset($messageLogin)) {
-  ?>
-    $(document).ready(function(){
-      alert("Error de autenticación");  
-    });
-  <?php
-}
-?>
-</script>
+    <div class="login-container">
+        <form action="login" class="login-form" method="post">
+            <div class="input-group">
+                <input type="email" id="user" name="user">
+                <label for="user" class="label-movement">Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="pass" name="pass">
+                <label for="pass">Contraseña</label>
+            </div>
+            <div class="access-input-group">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <input type="submit" id="submit" value="Ingresar">
+                <a href="#">Quiero crear una cuenta</a>
+            </div>
+        </form>
+    </div>
+</header>
