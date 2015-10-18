@@ -1,4 +1,7 @@
-@include('header')
+@include('header-start')
+<link rel="stylesheet" href="css/index-styles.css"> 
+<link rel="stylesheet" href="css/index-queries.css">
+@include('header-end')
 <section class="cover">
         <img src="media/logos/logohorz_blc.png" alt="Chelam">
         <h1>Cerveza artesanal hasta tu casa</h1>

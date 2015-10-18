@@ -15,7 +15,7 @@
             transition: all 0.5s;
         }
             .main-nav a:hover, .main-nav a:hover i{
-                color: tomato;
+                color: #E73742;
             }
     
 /*    Login */
@@ -76,6 +76,7 @@
         font-size: 0.9em;
         color: #1C4E9D;
         font-weight: 300;
+        margin: 5px 0;
     }
     
     .access-input-group a:hover{
