@@ -1,7 +1,10 @@
-@include('header-start')
-    <link rel="stylesheet" href="css/mayoreo-styles.css">
-    <link rel="stylesheet" href="css/mayoreo-queries.css">
-@include('header-end')
+@extends('header')
+@section('title', 'Mayoreo')
+@section('page-css')
+<link rel="stylesheet" href="css/mayoreo-styles.css"> 
+<link rel="stylesheet" href="css/mayoreo-queries.css">
+@endsection
+@section('content')
 <section class="page-cover">
         <h2>Sabemos que amas lo artesanal</h2>
         <p>Por eso tenemos venta al mayoreo, para saciar tu sed de las mejores cervezas.</p>
@@ -17,3 +20,4 @@
 </section>
 </body>
 </html>
+@endsection

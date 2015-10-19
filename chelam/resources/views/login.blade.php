@@ -1,7 +1,11 @@
-@include('header-start')
-    <link rel="stylesheet" href="css/login-styles.css">
-    <link rel="stylesheet" href="css/login-queries.css">
-@include('header-end')
+@extends('header')
+@section('title', 'Accede a tu cuenta')
+@section('page-css')
+<link rel="stylesheet" href="css/login-styles.css"> 
+<link rel="stylesheet" href="css/login-queries.css">
+@endsection
+
+@section('content')
 <section class="login">
 <form action="user.html" class="login-form">
     <div class="login-group">
@@ -19,3 +23,4 @@
 </section>
 </body>
 </html>
+@endsection
