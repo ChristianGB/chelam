@@ -12,6 +12,7 @@
     
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/animations.js"></script>
+    <script src="js/prefixfree.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/chelas/imago_color.png"/>
 
     <link rel="stylesheet" href="css/font-awesome.css">
