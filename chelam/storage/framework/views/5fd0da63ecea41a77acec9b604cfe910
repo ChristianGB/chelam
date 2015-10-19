@@ -1,7 +1,4 @@
-@include('header-start')
-<link rel="stylesheet" href="css/index-styles.css"> 
-<link rel="stylesheet" href="css/index-queries.css">
-@include('header-end')
+<?php echo $__env->make('header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <section class="cover">
         <img src="media/logos/logohorz_blc.png" alt="Chelam">
         <h1>Cerveza artesanal hasta tu casa</h1>
@@ -76,4 +73,4 @@ Cervezas Artesanales Mexicanas.</p>
             </div>
         </div>        
     </section>
-@include('footer')
+<?php echo $__env->make('footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

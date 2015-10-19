@@ -1,0 +1,81 @@
+/* Blue #1C4E9D; */
+
+/* User ID */
+#userID{
+    font-weight: 500;
+    color: #E73742;
+}
+
+.user-active{
+    border-top: 3px solid #1C4E9D;
+}
+
+/* User nav */
+.user-nav{
+    max-width: 900px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-nav a{
+    width: 200px;
+    text-align: center;
+    line-height: 3;
+}
+
+/* User panel */
+.user-panel{
+    height: 100vh;
+    padding-top: 40px;
+    
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+    .user-panel .user-profile{
+        max-width: 1000px;
+        height: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-content: center;
+    }
+
+        .user-panel .user-profile .user-header{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 5px solid #1C4E9D;
+        }
+
+            .user-panel .user-profile .user-header .user-img{
+                width: 200px;
+                height: 200px;
+                
+                overflow: hidden;
+                
+                margin-bottom: 20px;
+                
+                border: 5px solid #3c3c3c;
+                background: #1C4E9D;
+                border-radius: 50%;
+            }
+                .user-panel .user-profile .user-header .user-img img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+        .user-panel .user-profile .user-data{}
+            .user-panel .user-profile .user-data h2{
+                font-family: 'Lato', sans-serif;
+                font-weight: 600;
+                color: #22313F;
+            }
