@@ -27,6 +27,7 @@
             <div class="register-group">
                 <label for="pass2">Repita su contraseña</label>
                 <input type="password" name="pass2" id="pass2">
+                <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
             </div>
             <input type="submit" value="Crear cuenta">
         </form>

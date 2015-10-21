@@ -1,7 +1,10 @@
 /* cover styles */
+
 .cover{
     width: 100%;
-    height: 500px;
+    height: 100vh;
+    min-height: 540px;
+    padding: 40px;
     
     background: url(../media/walls/wall5.jpg) no-repeat center;
     background-size: cover;

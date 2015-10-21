@@ -5,17 +5,6 @@
     box-sizing: border-box;
 }
 
-input{
-    border-radius: 0px;
-}
-
-input[type="submit"],
-input[type="button"]{
-	appearance:none;
-	-moz-appearance:none; /* Firefox */
-	-webkit-appearance:none; /* Safari and Chrome */
-}
-
 html, body{
     width: 100%;
     height: 100%;
@@ -26,7 +15,7 @@ p, a, h2, h3{
 }
 
 a{ text-decoration: none; color: #E73742; }
-.fa{ color: #3c3c3c; }
+.fa{ color: white; }
 .btn{
     display: block;
     width: 150px;
@@ -59,6 +48,8 @@ a{ text-decoration: none; color: #E73742; }
     top: 0;
     left: 0;
     z-index: 100;
+    
+    overflow: hidden;
     
     background: rgba(255,255,255,0.5);
     
@@ -114,7 +105,7 @@ a{ text-decoration: none; color: #E73742; }
     border: 3px solid #E73742;
     margin-bottom: 20px;
     
-    transition: all 0.5s;
+    transition: position 0.5s, border 0.5s;
 }
 
 .modal-buttons .btn:hover{
@@ -133,14 +124,21 @@ a{ text-decoration: none; color: #E73742; }
     height: 100px;    
     padding: 0 20px;
     
-    background: white;
+    background: url(../media/walls/pleca_sup.png) repeat-x;
+    background-size: contain;
     border-top: 7px solid #E73742;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
     
     position: relative;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    transition: all 0.4s;
 }
     .main-header img{
         width: 100px;
@@ -153,8 +151,8 @@ a{ text-decoration: none; color: #E73742; }
             width: 100%;
             padding: 20px;
             
-            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-            color: #3c3c3c;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            color: white;
             font-weight: lighter;
             font-size: 1.2em;
         }
@@ -162,7 +160,7 @@ a{ text-decoration: none; color: #E73742; }
 .show-nav { 
     width: 100%;
     
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     
     display: flex;
     flex-flow: column;
@@ -174,23 +172,33 @@ a{ text-decoration: none; color: #E73742; }
         left: 0;    
 }
 
+.fix-header{
+    position: fixed;
+    top: -10px;
+    left: 0;
+
+    border-top: 0px;
+    border-bottom: 7px solid #22313F;
+}
+
 
 /* Footer */
+.marcas{
+    text-align: center;
+    padding: 40px;
+    background: #22313F;
+}
+    .marcas h2{
+        color: white;
+        font-family: 'Dancing Script', Verdana;
+        font-size: 2em;
+        text-shadow: 0 1px 5px #3c3c3c;
+    }
+
 footer{
-    background: #E73742;
-    
+    background: url(../media/walls/Footer.jpg) center;    
     padding: 60px;
 }
-    .marcas{
-        text-align: center;
-        padding-bottom: 40px;
-    }
-        .marcas h2{
-            color: white;
-            font-family: 'Dancing Script', Verdana;
-            font-size: 2em;
-            text-shadow: 0 1px 5px #3c3c3c;
-        }
     .foot-info p{
         font-family: Lato, sans-serif;
         color: white;

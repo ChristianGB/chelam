@@ -1,0 +1,300 @@
+.chelas-container{
+    width: 100%;
+    padding-top: 20px;
+    
+    display: flex;
+    flex-flow: column;
+    
+    text-align: center;
+    
+    background: whitesmoke;
+}
+
+.chelas-container .chelas-nav{
+    border-bottom: 7px solid #2C3E50;
+    padding: 20px;
+}
+
+.chelas-container .chelas-nav h2,
+.chelas-container .chelas-nav h3,
+.chelas-container .chelas-nav p,
+.chelas-container .chelas-nav label{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.chelas-container .chelas-nav h2{ font-weight: 600; color: #2C3E50; }
+.chelas-container .chelas-nav h2:after{
+    content: '';
+    display: block;
+    margin: 5px auto;
+    width: 150px;
+    height: 4px;
+
+    background: #E73742;
+}
+
+.chelas-container .chelas-nav h3{
+    font-weight: 400;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.chelas-container .chelas-nav form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    
+    margin-top: 20px;
+}
+
+.chelas-container .chelas-nav form .check-group{
+    width: 150px;
+    margin: 5px;
+    text-align: justify;
+}
+
+.chelas-container .chelas-nav form .check-group input[type="checkbox"]{
+    margin-bottom: 20px;
+}
+
+.chelas-container .chelas-nav form .check-group select{
+    width: 100%;
+}
+
+.chelas-list{
+    background: white;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;    
+}
+
+/* Cada chela */
+.chela-container{
+    width: 100%;
+    display: flex;
+    
+    position: relative;
+    margin-bottom: 20px;
+    
+    padding: 10px;
+    
+    border-radius: 2px;  
+    border-bottom: 3px solid #2C3E50;
+}
+
+
+.chela-container-img{
+    width: 200px;
+    height: 200px;
+    
+    margin: auto;
+}
+
+.chela-container img{
+    width: 60px;
+    height: 185px;
+    margin: auto;
+}
+
+.chela-container .chela-list-info{
+    width: 100%;
+}
+
+.chela-container .chela-list-info .chela-list-info-header{
+   text-align: justify;
+    border-bottom: 2px solid #E73742;
+    padding-bottom: 5px;
+}
+
+.chela-list-info-header h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #2C3E50;
+}
+
+.chela-list-info-header h2 span{
+    font-weight: 300;
+}
+
+.chela-list-info-header p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #2C3E50;
+}
+
+.more-info{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+    text-align: center;
+    font-weight: 600;
+    
+    background: #E73742;
+    display: block;
+    width: 22px;
+    line-height: 22px;
+    color: white;
+    border-radius: 50%;
+}
+
+.chela-list-info-content{
+    text-align: left;
+    padding: 20px;
+}
+
+.chela-list-info-content a{
+    text-align: right;
+    font-weight: 600;
+    color: #2C3E50;
+}
+
+.chela-list-info-content p{
+    margin: 5px 0;
+}
+
+.price{
+    color: #1E4CD9;
+    font-size: 1.5em;
+}
+
+.old-price{
+    font-size: 1em;
+    text-decoration: line-through;
+}
+
+.promo-price{
+    color: #E73742;
+    font-size: 1.5em;
+}
+
+.volumen{
+    font-size: 0.8em;
+    color: #3d3d3d;
+}
+
+.add-to-cart{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* chela modal */
+.chela-modal{
+    display: none;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    z-index: 999;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: rgba(0,0,0,0.7);
+}
+
+.chela-modal-container{
+    width: 90%;
+    max-width: 600px;
+    
+    margin: auto;
+    background: white;
+    
+    position: relative;
+    
+    display: flex;
+    flex-flow: column;
+    
+    overflow: hidden;
+}
+
+.chela-header{
+    width: 100%;
+    background: #1C4E9D;
+    position: relative;
+}
+
+.chela-header a{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: whitesmoke;
+}
+
+.chela-header h2{
+    padding: 10px;
+    color: white;
+}
+
+.chela-header h2 span{
+    font-weight: 300;
+}
+
+.chela-info{
+    padding: 10px;
+    display: flex;
+}
+
+.chela-info-img img{
+    display: none;    
+}
+
+.chela-info .chela-data{
+    width: 100%%;
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+}
+
+.chela-info .chela-data .data-group{
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+}
+
+.chela-info .chela-data .data-group p,
+.chela-info .chela-data .data-group strong{
+    display: table-cell;
+    width: 30%;   
+}
+
+.chela-info .chela-data .data-group p{
+    text-align: right;
+    color: #3c3c3c;
+}
+
+.chela-info .chela-data .data-group strong{
+    text-align: left;
+    color: #1d1d1d;
+}
+
+.chela-desc{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 0.9em;
+    padding: 20px;
+    text-align: justify;
+    background: whitesmoke;
+}
+
+.show-chela-info{
+    display: flex;
+}
+
+/* chela modal */

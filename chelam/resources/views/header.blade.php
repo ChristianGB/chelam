@@ -11,8 +11,8 @@
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
     
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="js/animations.js"></script>
     <script src="js/prefixfree.min.js"></script>
+    <script src="js/animations.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/chelas/imago_color.png"/>
 
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -40,16 +40,16 @@
 
 <header class="main-header">
     <a href="/">
-        <img src="media/logos/tipo_gris.png" alt="Chelam">
+        <img src="media/logos/tipo_blc.png" alt="Chelam">
     </a>
     <div class="main-nav-btn">
         <i class="fa fa-bars fa-2x"></i>
     </div>
     <nav class="main-nav">
         <a href="/chelas">Chelas</a>
-        <a href="/chelapack">Chelapack</a>
-        <a href="/mayoreo">Mayoreo</a>
-        <a href="#">Membresias</a>
+        <a href="/chelapack">Chela<strong>pack</strong></a>
+        <a href="/mayoreo">Negocio</a>
+        <a href="#">Miembros</a>
         <?php
         if(\Session::get("nameUsuarioSesion") == null){
           ?>

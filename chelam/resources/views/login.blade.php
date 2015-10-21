@@ -15,6 +15,7 @@
     <div class="login-group">
         <label for="pass">Ingrese su contraseña</label>
         <input type="password" name="pass" id="pass">
+        <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
     </div>
     <a href="#">¿Olvidaste tu contraseña?</a>
     <a href="/registrar"><strong>Quiero crear una cuenta</strong></a>
