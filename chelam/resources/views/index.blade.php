@@ -1,7 +1,12 @@
-@include('header-start')
+@extends('header')
+
+@section('title', 'Cervezas Artesanales')
+@section('page-css')
 <link rel="stylesheet" href="css/index-styles.css"> 
 <link rel="stylesheet" href="css/index-queries.css">
-@include('header-end')
+@endsection
+
+@section('content')
 <section class="cover">
         <img src="media/logos/logohorz_blc.png" alt="Chelam">
         <h1>Cerveza artesanal hasta tu casa</h1>
@@ -77,3 +82,4 @@ Cervezas Artesanales Mexicanas.</p>
         </div>        
     </section>
 @include('footer')
+@endsection

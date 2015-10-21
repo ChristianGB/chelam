@@ -2,7 +2,7 @@
 /*    cover */
     
     .cover{
-        padding-left: 160px;
+        padding-left: 160px;       
     
         display: flex;
         flex-flow: column;

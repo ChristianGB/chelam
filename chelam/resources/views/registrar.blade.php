@@ -1,7 +1,11 @@
-@include('header-start')
-    <link rel="stylesheet" href="css/registro-styles.css">
-    <link rel="stylesheet" href="css/registro-queries.css">
-@include('header-end')
+@extends('header')
+@section('title', 'Regístrate')
+@section('page-css')
+<link rel="stylesheet" href="css/registro-styles.css"> 
+<link rel="stylesheet" href="css/registro-queries.css">
+@endsection
+
+@section('content')
 <section class="to-login">
         <h2>¿Ya tienes una cuenta?</h2>
         <p>No esperes más, <a href="/login">Inicia tu sesión aquí</a>.</p>
@@ -23,9 +27,11 @@
             <div class="register-group">
                 <label for="pass2">Repita su contraseña</label>
                 <input type="password" name="pass2" id="pass2">
+                <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
             </div>
             <input type="submit" value="Crear cuenta">
         </form>
     </section>
 </body>
 </html>
+@endsection

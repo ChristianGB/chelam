@@ -1,7 +1,11 @@
-@include('header-start')
-    <link rel="stylesheet" href="css/login-styles.css">
-    <link rel="stylesheet" href="css/login-queries.css">
-@include('header-end')
+@extends('header')
+@section('title', 'Accede a tu cuenta')
+@section('page-css')
+<link rel="stylesheet" href="css/login-styles.css"> 
+<link rel="stylesheet" href="css/login-queries.css">
+@endsection
+
+@section('content')
 <section class="login">
 <form action="user.html" class="login-form">
     <div class="login-group">
@@ -11,6 +15,7 @@
     <div class="login-group">
         <label for="pass">Ingrese su contraseña</label>
         <input type="password" name="pass" id="pass">
+        <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
     </div>
     <a href="#">¿Olvidaste tu contraseña?</a>
     <a href="/registrar"><strong>Quiero crear una cuenta</strong></a>
@@ -19,3 +24,4 @@
 </section>
 </body>
 </html>
+@endsection

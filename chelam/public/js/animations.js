@@ -21,7 +21,27 @@ $( document ).ready(function(){
             $('.login-container').toggleClass('show-login')
         else
             window.location.href = "/login"
-    })    
+    })
+
+// Sticky nav
+    $(window).on('scroll', function(){
+        if($(window).scrollTop() > 20){
+            $('.main-header').addClass('fix-header')
+        } else {
+            $('.main-header').removeClass('fix-header')
+        }
+    })
+    
+//show chela info
+    $('.more-info').click(function(e){
+        e.preventDefault()
+        $('.chela-modal').addClass('show-chela-info')
+    })
+    
+    $('.exit-modal').click(function(e){
+        e.preventDefault()
+        $('.chela-modal').removeClass('show-chela-info')
+    })
     
 // Cookies
     function setCookie(cname, cvalue, exdays) {

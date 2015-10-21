@@ -5,56 +5,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Chelam | Cervezas artesanales</title>
+    <title>Chelam | @yield('title')</title>
     
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
     
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index-styles.css">
-    <link rel="stylesheet" href="css/main-queries.css">
-    <link rel="stylesheet" href="css/index-queries.css">
-    
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
     <script src="js/animations.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/chelas/imago_color.png"/>
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/main-queries.css">
+
+    @yield('page-css')
 </head>
-<!-- <body id="page-top" data-spy="scroll" data-target=".navbar-custom"> -->
-	<!-- Trigger the modal with a button -->
-	<!-- Modal -->
-	<!-- <div id="myModal" class="modal modal-wide text-center" role="dialog">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h4 class="modal-title">¿Eres mayor de edad?</h4>
-	      </div>
-	      <div class="modal-body">
-	      	<div class="container modalImg">
-	      	</div>
-	        <div class="botonesSiNo col-md-12">
-	        	<div class="col-md-6">
-	        		<a class="btn btn-skin btn-scroll" id="btnSi">Si</a>
-	        	</div>
-	        	<div class="col-md-6">
-	        		<a href="https://www.youtube.com/watch?v=k7exgdlVyU0" class="btn btn-skin btn-scroll" id="btnNo">No</a>
-	        	</div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</div> -->
+<body>
+<!--   Ventana modal  -->
+   <section class="modal">
+      <div class="modal-content">
+         <div class="modal-header">
+           <img src="media/logos/tipo_color.png" alt="Chelam">
+           <h2>La venta de alcohol a menores está penada por la ley</h2>
+           <p>Al confirmar que eres mayor de edad, estás aceptando nuestros <a href="#">términos y condiciones</a> así como nuestra <a href="#">política de privacidad</a>.</p>
+       </div>
+       <div class="modal-buttons">
+           <a href="#" class="btn" id="mayorEdad">Soy mayor de edad</a>
+           <a href="https://www.youtube.com/watch?v=k7exgdlVyU0">No soy mayor de edad</a>
+       </div>         
+      </div>       
+   </section>
+<!--   Fin ventana modal  -->
 
 <header class="main-header">
-    <img src="media/logos/tipo_gris.png" alt="Chelam">
+    <a href="/">
+        <img src="media/logos/tipo_blc.png" alt="Chelam">
+    </a>
     <div class="main-nav-btn">
         <i class="fa fa-bars fa-2x"></i>
     </div>
     <nav class="main-nav">
-        <a href="#">Chelas</a>
-        <a href="#">Chelapack</a>
-        <a href="#">Mayoreo</a>
-        <a href="#">Membresias</a>
+        <a href="/chelas">Chelas</a>
+        <a href="/chelapack">Chela<strong>pack</strong></a>
+        <a href="/mayoreo">Negocio</a>
+        <a href="#">Miembros</a>
         <?php
         if(\Session::get("nameUsuarioSesion") == null){
           ?>
@@ -82,9 +77,10 @@
             </div>
             <div class="access-input-group">
                 <a href="#">¿Olvidaste tu contraseña?</a>
-                <input type="submit" id="submit" value="Ingresar">
-                <a href="#">Quiero crear una cuenta</a>
+                <input type="submit" id="submit" value="Ingresar">                    
+                <a href="/registrar"><strong>Quiero crear una cuenta</strong></a>
             </div>
         </form>
     </div>
 </header>
+@yield('content')    
