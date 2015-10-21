@@ -40,6 +40,9 @@ class HomeController extends Controller {
 		return view('chelapack');
 	}
 
+	public function carritoView(){
+		return view('carrito');	
+	}
 
 	public function listaComprasView(){
 		return view('listaCompras');

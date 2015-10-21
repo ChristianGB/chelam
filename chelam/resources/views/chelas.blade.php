@@ -62,136 +62,9 @@
                     <p class="price old-price">$65.00</p>
                     <p class="promo-price">$30.00</p>
                     <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/1.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Apophis<span></span></h2>
-                    <p>Tipo</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price old-price">$65.00</p>
-                    <p class="promo-price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/2.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Trepadora<span></span></h2>
-                    <p>Tipo</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/3.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Trepadora <span>Red Ale</span></h2>
-                    <p>Tipo</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price old-price">$65.00</p>
-                    <p class="promo-price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/4.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Tzotzil<span></span></h2>
-                    <p>Ambar</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/5.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Tzotzil<span></span></h2>
-                    <p>Lager</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/6.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Tzotzil<span> Miel</span></h2>
-                    <p>Lager</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price old-price">$65.00</p>
-                    <p class="promo-price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/7.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Tzotzil<span> Porter</span></h2>
-                    <p>Premium</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                    <button type="button" class="add-to-cart">
+                      <i class="fa fa-plus"></i>Agregar al carrito
+                    </button>
                 </div>
             </div>
         </div>
@@ -209,7 +82,9 @@
                 <div class="chela-list-info-content">
                     <p class="price">$30.00</p>
                     <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                    <button type="button" class="add-to-cart">
+                      <i class="fa fa-plus"></i>Agregar al carrito
+                    </button>
                 </div>
             </div>
         </div>
@@ -221,7 +96,7 @@
    <div class="chela-modal">                              
        <div class="chela-modal-container">
            <div class="chela-header">
-               <h2>Ceveza <span>Melano</span></h2>
+               <h2>Nombre de <span>Cerveza</span></h2>
                <a href="" class="exit-modal">Cerrar</a>
            </div>
            <div class="chela-info">
@@ -260,7 +135,7 @@
                </div>
            </div>
            <div class="chela-desc">
-               <p>Digamos que esta es la chela del mundo aunque no lo es, sólo para ver si vende más</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit saepe voluptatum, nulla debitis atque at molestiae, esse iure quisquam dolorem neque alias sed vero! Iste quae ratione tempora amet beatae.</p>
            </div>
        </div>
    </div>    

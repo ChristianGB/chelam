@@ -10,7 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
     
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <script src="js/animations.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/chelas/imago_color.png"/>
@@ -62,8 +62,9 @@
         }
         ?>
         
-        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+        <a href="#" id="show-cart"><i class="fa fa-shopping-cart"></i></a>
     </nav>
+
     <div class="login-container">
         <form action="login" class="login-form" method="post">
             <div class="input-group">
@@ -82,5 +83,57 @@
             </div>
         </form>
     </div>
+
+    <div class="cart">
+      <header class="cart-header">
+          <h2>Tus compras</h2>                
+      </header>
+      <div class="cart-resume">               
+          <img src="media/icons/caja.png" alt="Caja">
+          <div class="cart-resume-data">
+              <p>Chela <strong>Pack</strong></p>
+              <p id="chelapack-status">Personalizado</p>
+              <p id="chelapack-size"><span>3</span> de <span>6</span> cervezas</p>
+              <p id="mini-total">$<span>195.00</span></p>
+              <p class="nota">Envío incluido a todo México</p>
+          </div>                                                     
+      </div>
+      <div class="cart-list">
+          <div class="cart-list-group">
+              <a href="">X</a>
+              <p class="chela-name"><strong>Trepadora</strong> Red Ale</p>
+              <p class="chela-amount">1 x $65</p>
+          </div>
+          <div class="cart-list-group">
+              <a href="">X</a>
+              <p class="chela-name"><strong>Tzotzil</strong> Porter</p>
+              <p class="chela-amount">1 x $65</p>
+          </div>
+          <div class="cart-list-group">
+              <a href="">X</a>
+              <p class="chela-name"><strong>Trepadora</strong> Red Ale</p>
+              <p class="chela-amount">1 x $65</p>
+          </div>
+          <div class="cart-list-group">
+              <a href="">X</a>
+              <p class="chela-name"><strong>Tzotzil</strong> Porter</p>
+              <p class="chela-amount">1 x $65</p>
+          </div>
+          <div class="cart-list-group">
+              <a href="">X</a>
+              <p class="chela-name"><strong>Trepadora</strong> Red Ale</p>
+              <p class="chela-amount">1 x $65</p>
+          </div>
+          <div class="cart-list-group">
+              <a href="">X</a>
+              <p class="chela-name"><strong>Tzotzil</strong> Porter</p>
+              <p class="chela-amount">1 x $65</p>
+          </div>
+      </div>
+      <footer class="cart-list-footer">
+          <p class="chelapack-total">Total: <strong>$195.00</strong></p>
+          <input type="button" value="Comprar" id="comprar-chela">
+      </footer> 
+  </div>
 </header>
 @yield('content')    

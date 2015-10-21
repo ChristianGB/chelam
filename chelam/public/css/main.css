@@ -23,6 +23,8 @@ input[type="password"],
     border-radius: 0px;
 }
 
+.cart{ display: none; }
+
 a{ text-decoration: none; color: #E73742; }
 .fa{ color: white; }
 .btn{

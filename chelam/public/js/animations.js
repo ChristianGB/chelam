@@ -14,7 +14,16 @@ $( document ).ready(function(){
     $('.main-nav-btn').click(function(){
         $('.main-nav').toggleClass('show-nav')
     })
-    
+// Show cart 
+    $('#show-cart').click(function(e){
+        e.preventDefault()
+        if($(window).width() >= 900)
+            $('.cart').toggleClass('show-cart')
+        else
+            window.location.href = "/chelas"
+    })
+
+// Show login 
     $('#show-login').click(function(e){
         e.preventDefault()
         if($(window).width() >= 900)

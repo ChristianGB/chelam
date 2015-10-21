@@ -17,7 +17,7 @@
     }
     
     .chela-info .chela-data .data-group{
-        border-spacing: 30px 10px;
+        border-spacing: 10px 10px;
     }
     
     .chela-container{        
@@ -35,10 +35,5 @@
     
     .chela-list-info-content{
         text-align: left;
-    }
-    
-    .add-to-cart{
-        position: static;        
-        display: block;
     }
 }
