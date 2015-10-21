@@ -1,31 +1,31 @@
-<?php echo $__env->make('header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-<section class="hero" id="intro">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center inner">
-					<div class="animatedParent">
-						<form id="contact-form" action="crearusuario" method="post">
-							<div class="row marginbot-20">
-								<div class="col-md-6 xs-marginbot-20"></div>
-								<div class="col-md-6">
-									<div id="registro"></div>
-									<div class="contentRegistro">
-										<button type="button" class="form-control btn btn-primary"><i class="fa fa-facebook"></i> Login</button>
-										<hr>
-										<input type="text" class="form-control input-lg inputRegistro" id="username" placeholder="Usuario" required="required" name="userName"/>
-					                  	<input type="email" class="form-control input-lg inputRegistro" id="email" placeholder="Email" required="required" name="email"/>
-					                  	<input type="password" class="form-control input-lg inputRegistro " id="password" placeholder="Contraseña" required="required" name="password"/>
-					                  	<input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
-					                  	<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
-					                  	<input type="hidden" name="_token" value="<?php echo csrf_token() ?>">
-					                  	<input type="submit" class="form-control btn btn-danger" Value="Crear Cuenta">
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-			   </div>
-              </div>
-            </div>
+<?php echo $__env->make('header-start', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <link rel="stylesheet" href="css/registro-styles.css">
+    <link rel="stylesheet" href="css/registro-queries.css">
+<?php echo $__env->make('header-end', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<section class="to-login">
+        <h2>¿Ya tienes una cuenta?</h2>
+        <p>No esperes más, <a href="/login">Inicia tu sesión aquí</a>.</p>
     </section>
-<?php echo $__env->make('footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <section class="register">
+        <form action="user.html" class="register-form">
+            <div class="register-group">
+                <label for="user">Ingrese un nombre de usuario</label>
+                <input type="text" name="user" id="user">
+            </div>
+            <div class="register-group">
+                <label for="email">Ingrese su correo</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="register-group">
+                <label for="pass">Ingrese su contraseña</label>
+                <input type="password" name="pass" id="pass">
+            </div>
+            <div class="register-group">
+                <label for="pass2">Repita su contraseña</label>
+                <input type="password" name="pass2" id="pass2">
+            </div>
+            <input type="submit" value="Crear cuenta">
+        </form>
+    </section>
+</body>
+</html>
