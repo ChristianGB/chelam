@@ -105,7 +105,8 @@
 }
 
 .chela-container .chela-list-info .chela-list-info-header{
-   text-align: justify;
+    width: 100%;
+    text-align: left;
     border-bottom: 2px solid #E73742;
     padding-bottom: 5px;
 }
@@ -114,6 +115,8 @@
     font-family: 'Lato', sans-serif;
     font-weight: 600;
     color: #2C3E50;
+    width: 85%;
+    display: block;
 }
 
 .chela-list-info-header h2 span{
@@ -183,17 +186,14 @@
     right: 10px;
 }
 
+/*
+*   
+*   CHELA MODAL || CHELA MODAL || CHELA MODAL || 
+*   CHELA MODAL || CHELA MODAL || CHELA MODAL || 
+*   CHELA MODAL || CHELA MODAL || CHELA MODAL || 
+*
+*/
 
-
-
-
-
-
-
-
-
-
-/* chela modal */
 .chela-modal{
     display: none;
     
@@ -205,6 +205,8 @@
     
     width: 100%;
     height: 100vh;
+
+    overflow-y: auto; 
     
     background: rgba(0,0,0,0.7);
 }

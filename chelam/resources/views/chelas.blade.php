@@ -78,7 +78,8 @@
                     <a href="" class="more-info">?</a>
                 </header>
                 <div class="chela-list-info-content">
-                    <p class="price">$30.00</p>
+                    <p class="price old-price">$65.00</p>
+                    <p class="promo-price">$30.00</p>
                     <p class="volumen">600 ml</p>
                     <a href="" class="add-to-cart">Agregar al carrito</a>
                 </div>
@@ -114,7 +115,8 @@
                     <a href="" class="more-info">?</a>
                 </header>
                 <div class="chela-list-info-content">
-                    <p class="price">$30.00</p>
+                    <p class="price old-price">$65.00</p>
+                    <p class="promo-price">$30.00</p>
                     <p class="volumen">600 ml</p>
                     <a href="" class="add-to-cart">Agregar al carrito</a>
                 </div>
@@ -146,6 +148,61 @@
             <div class="chela-list-info">
                 <header class="chela-list-info-header">
                     <h2>Tzotzil<span></span></h2>
+                    <p>Lager</p>
+                    <a href="" class="more-info">?</a>
+                </header>
+                <div class="chela-list-info-content">
+                    <p class="price">$30.00</p>
+                    <p class="volumen">600 ml</p>
+                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="chela-container">
+            <div class="chela-container-img">
+              <img src="media/beers/6.png" alt="chela">
+            </div>            
+            <div class="chela-list-info">
+                <header class="chela-list-info-header">
+                    <h2>Tzotzil<span> Miel</span></h2>
+                    <p>Lager</p>
+                    <a href="" class="more-info">?</a>
+                </header>
+                <div class="chela-list-info-content">
+                    <p class="price old-price">$65.00</p>
+                    <p class="promo-price">$30.00</p>
+                    <p class="volumen">600 ml</p>
+                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="chela-container">
+            <div class="chela-container-img">
+              <img src="media/beers/7.png" alt="chela">
+            </div>            
+            <div class="chela-list-info">
+                <header class="chela-list-info-header">
+                    <h2>Tzotzil<span> Porter</span></h2>
+                    <p>Premium</p>
+                    <a href="" class="more-info">?</a>
+                </header>
+                <div class="chela-list-info-content">
+                    <p class="price">$30.00</p>
+                    <p class="volumen">600 ml</p>
+                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="chela-container">
+            <div class="chela-container-img">
+              <img src="media/beers/8.png" alt="chela">
+            </div>            
+            <div class="chela-list-info">
+                <header class="chela-list-info-header">
+                    <h2>Tzotzil<span> Stout</span></h2>
                     <p>Lager</p>
                     <a href="" class="more-info">?</a>
                 </header>
