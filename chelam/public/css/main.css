@@ -14,6 +14,11 @@ p, a, h2, h3{
     font-family: 'Lato', sans-serif;
 }
 
+input{
+    appearance: none;
+    border-radius: 0px;
+}
+
 a{ text-decoration: none; color: #E73742; }
 .fa{ color: white; }
 .btn{
