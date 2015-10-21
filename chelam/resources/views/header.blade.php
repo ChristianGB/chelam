@@ -78,7 +78,7 @@
             <div class="input-group">
                 <input type="password" id="pass" name="pass">
                 <label for="pass">Contraseña</label>
-                <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+                
             </div>
             <div class="access-input-group">
                 <a href="#">¿Olvidaste tu contraseña?</a>
