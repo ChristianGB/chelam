@@ -181,9 +181,30 @@
 }
 
 .add-to-cart{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    border: none;
+    padding: 10px;
+    background: #E73742;
+    color: white;
+
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.add-to-cart:hover{
+    background: #1C4E9D;
+}
+
+.add-to-cart:focus{
+    border: 0px;
+    box-shadow: 0px;
+    outline: none;
+}
+
+.add-to-cart i{
+    color: white;
+    vertical-align: middle;
+    margin-right: 10px;    
 }
 
 /*

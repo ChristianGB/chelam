@@ -18,6 +18,7 @@ Route::get('chelapack', 'HomeController@chelaPackView');
 Route::get('listaCompras', 'HomeController@listaComprasView');
 Route::get('mayoreo', 'HomeController@mayoreoView');
 Route::get('login', 'HomeController@loginView');
+Route::get('carrito','HomeController@carritoView');
 
 Route::get('registrar', 'HomeController@registrarUsuario');
 

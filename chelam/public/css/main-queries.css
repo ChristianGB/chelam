@@ -25,12 +25,15 @@
         width: 400px;
         
         position: absolute;
-        top: 94px;
+        top: 93px;
         right: 25px;
         
         padding: 10px 30px;
-        
-        background: white;
+
+        background: whitesmoke;
+        box-shadow: 0 3px 7px 0 rgba(0,0,0,0.2);
+
+        border-top: 7px solid #2C3E50;
     }
     .input-group{
         position: relative;
@@ -100,5 +103,152 @@
     
     .show-login{
         display: block;
+    }
+
+
+    /* CARRITO DE COMPRA */
+    .cart{
+        width: 450px;
+        background: whitesmoke;
+        padding: 20px;
+        
+        text-align: center;
+        box-shadow: 0 3px 7px 0 rgba(0,0,0,0.2);
+
+        border-top: 7px solid #2C3E50;
+        
+        position: absolute;
+        right: 30px;
+        top: 93px;
+        
+        display: none;
+        flex-flow: column;
+    }
+
+    .cart-header h2{
+        font-family: 'Lato', sans-serif;
+        color: #22313F;
+        padding: 10px;
+    }
+
+    .cart-header h2:after{
+        content: '';
+        display: block;
+        margin: 5px auto;
+        width: 200px;
+        height: 5px;
+
+        background: #2C3E50;
+    }
+
+    .cart-resume{
+        display: flex;
+        height: 120px;
+        
+        justify-content: space-between;
+    }
+
+    .cart-resume  img{
+        width: 160px;
+        margin-right: 10px;
+    }
+
+    .cart-resume .cart-resume-data{
+        text-align: left;
+    }
+
+    .cart-resume .cart-resume-data h3,
+    .cart-resume .cart-resume-data p{
+        font-family: 'Lato', sans-serif;
+        color: #1c1c1c;
+        font-size: 1.2em;
+    }
+
+    .cart-resume .cart-resume-data #chelapack-status{
+        font-size: 0.9em;
+        font-weight: 600;
+        color: teal;
+        margin-bottom: 10px;
+    }
+
+    .cart-resume .cart-resume-data #chelapack-size{
+        color: #1C4E9D;
+    }
+
+    .cart-resume .cart-resume-data #mini-total{
+        color: #E73742;
+    }
+
+    .cart-resume .cart-resume-data .nota{
+        font-size: 0.9em;
+        text-decoration: underline;
+        color: #1C4E9D;
+    }
+
+    .cart-list{
+        margin-top: 20px;
+        padding: 10px;
+        
+        height: 200px;
+        background: white;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.2) inset;
+        
+        border: 1px solid rgba(0,0,0,0.2);
+        
+        display: flex;
+        flex-flow: column;
+        
+        overflow-y: auto;
+    }
+
+    .cart-list-group{
+        width: 100%;
+        position: relative;
+        display: table;
+        padding: 10px;
+        
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+    }
+
+    .cart-list-group p{
+        display: table-cell;
+    }
+
+    .cart-list-group .chela-name{
+        width: 50%;
+        text-align: left;
+    }
+
+    .cart-list-group .chela-amount{
+        width: 40%;
+    }
+
+    .cart-list-group a{
+        position: absolute;
+        left: 10px;
+        
+    }
+
+    .cart-list-footer{
+        padding: 0px;
+        background: none;
+    }
+
+    .chelapack-total{
+        font-size: 1.4em;
+        padding: 15px;
+    }
+
+    .cart #comprar-chela{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        color: white;
+        font-size: 1.3em;
+        background: #E73742;
+    }
+
+    .show-cart{
+        display: flex;
     }
 }
