@@ -1,7 +1,9 @@
-<?php echo $__env->make('header-start', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-    <link rel="stylesheet" href="css/mayoreo-styles.css">
-    <link rel="stylesheet" href="css/mayoreo-queries.css">
-<?php echo $__env->make('header-end', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->startSection('title', 'Mayoreo'); ?>
+<?php $__env->startSection('page-css'); ?>
+<link rel="stylesheet" href="css/mayoreo-styles.css"> 
+<link rel="stylesheet" href="css/mayoreo-queries.css">
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
 <section class="page-cover">
         <h2>Sabemos que amas lo artesanal</h2>
         <p>Por eso tenemos venta al mayoreo, para saciar tu sed de las mejores cervezas.</p>
@@ -17,3 +19,6 @@
 </section>
 </body>
 </html>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,7 +1,10 @@
-<?php echo $__env->make('header-start', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->startSection('title', 'Cervezas Artesanales'); ?>
+<?php $__env->startSection('page-css'); ?>
 <link rel="stylesheet" href="css/index-styles.css"> 
 <link rel="stylesheet" href="css/index-queries.css">
-<?php echo $__env->make('header-end', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
 <section class="cover">
         <img src="media/logos/logohorz_blc.png" alt="Chelam">
         <h1>Cerveza artesanal hasta tu casa</h1>
@@ -77,3 +80,5 @@ Cervezas Artesanales Mexicanas.</p>
         </div>        
     </section>
 <?php echo $__env->make('footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

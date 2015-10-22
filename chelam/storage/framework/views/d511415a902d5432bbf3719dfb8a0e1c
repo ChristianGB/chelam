@@ -1,158 +1,270 @@
-<?php echo $__env->make('header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-    <section id="works" class="home-section">
-    	<div class="container marginbot-50">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div>
-					<div class="section-heading text-center">
-					<h2 class="h-bold">Busca tus cervezas
-					</h2>
-					<div class="divider-header"></div>
-					</div>
-					</div>
-				</div>
-			</div>
+<?php $__env->startSection('title', 'Chelas'); ?>
+<?php $__env->startSection('page-css'); ?>
+<link rel="stylesheet" href="css/chelas-styles.css"> 
+<link rel="stylesheet" href="css/chelas-queries.css">
+<?php $__env->stopSection(); ?>
 
-		</div>
-		<div class="container marginbot-50">
-			<div class="row">
-				
-				<div class="col-md-12">
-					
-					<div class="col-md-4">
-						<div class="col-md-2">
-
-							<p>Tipo:</p>
-						</div>
-						<div class="col-md-2">
-
-							<p>Ale</p>
-						</div>
-						<div class="col-md-2">
-							<input type="checkbox">
-						</div>
-
-						<div class="col-md-2">
-							<p>Lager</p>
-						</div>
-						<div class="col-md-2">
-							<input type="checkbox">
-						</div>
-					</div>
-
-					
-					<div class="col-md-4">
-						<div class="col-md-2">
-
-							<p>Color:</p>
-						</div>
-						<div class="col-md-2">
-							<p>Oscura</p>
-						</div>
-						<div class="col-md-2">
-							<input type="checkbox">
-						</div>
-
-						<div class="col-md-2">
-							<p>Clara</p>
-						</div>
-						<div class="col-md-2">
-							<input type="checkbox">
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="col-md-2">
-
-							<p>Estados:</p>
-						</div>
-						<div class="col-md-2">
-							<select>
-								<option>Lista de estados</option>
-								<option>Chiapas</option>
-							</select>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-
-            <div class="row animatedParent">
-                <div class="col-sm-12 col-md-12 col-lg-12" >
-
-                    <div class="row gallery-item">
-                        
-							<?php
-
-                			foreach ($allCervezas as $key) {
-                			?>
-                			<div class="col-md-3">
-								<a href="img/Cervezas/<?php echo $key->Nombre ?>.png" title="Agregar al carrito" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg" class="cervezasChelas">
-									<img src="img/Cervezas/<?php echo $key->Nombre ?>.png" class="img-responsive cervezasChelas" alt="img">
-
-								</a>
-							</div>
-		                	<?php
-		                	}
-		                	?>
-
-					</div>
-	
+<?php $__env->startSection('content'); ?>
+<section class="chelas-container">
+    <div class="chelas-nav">
+        <h2>BUSCA TUS CERVEZAS</h2>
+        <p>Encuentra tus cervezas por tipo, color, sabor o por el estado de su procedencia. </p>
+        <p>Recuerda que tus pedidos deben ser en múltiplos de 6.</p>
+        <form action="">
+            <div class="check-group">
+                <h3>Por tipo:</h3>                    
+                <input type="checkbox" name="tipo" value="Ale" id="ale">
+                <label for="ale">Ale</label><br>
+                
+                <input type="checkbox" name="tipo" value="Lager" id="lager">
+                <label for="lager">Lager</label>                  
+            </div>
+            <div class="check-group">
+                <h3>Por color:</h3>
+                <input type="checkbox" name="color" value="Oscura" id="oscura">
+                <label for="oscura">Oscura</label><br>
+                
+                <input type="checkbox" name="color" value="Clara" id="clara">
+                <label for="clara">Clara</label>
+            </div>
+            <div class="check-group">
+                <h3>Por sabor:</h3>
+                <input type="checkbox" name="sabor" value="Amargo" id="amargo">
+                <label for="oscura">Amargo</label><br>
+                
+                <input type="checkbox" name="sabor" value="Dulce" id="dulce">
+                <label for="clara">Dulce</label>
+            </div>
+            <div class="check-group">
+               <h3>Por estado:</h3>
+                <select name="estados" id="estados">                   
+                    <option value="todos">Todos</option>
+                    <option value="chiapas">Chiapas</option>
+                </select>
+            </div>                
+        </form>
+    </div>
+    <div class="chelas-list">
+       
+        <div class="chela-container">
+            <div class="chela-container-img">
+              <img src="media/beers/0.png" alt="chela">
+            </div>            
+            <div class="chela-list-info">
+                <header class="chela-list-info-header">
+                    <h2>Amnesia <span>Nocturna</span></h2>
+                    <p>Tipo</p>
+                    <a href="" class="more-info">?</a>
+                </header>
+                <div class="chela-list-info-content">
+                    <p class="price old-price">$65.00</p>
+                    <p class="promo-price">$30.00</p>
+                    <p class="volumen">600 ml</p>
+                    <a href="" class="add-to-cart">Agregar al carrito</a>
                 </div>
-            </div>	
-
-		</div>
-
-	</section>
-	<section id="works" class="home-section color-dark text-center bg-white">
-		<div class="container">
-        	<div class="row animatedParent">
-        		<div class="col-xs-6 col-sm-4 col-md-4">
-        			<div class="animated  slow">
-		                <div class="service-box">
-							<div class="service-icon">
-								
-							</div>
-							<div class="service-desc">
-
-								
-								<p>
-								FACEBOOK
-								</p>	
-								<p>twitter</p>					
-								<p>Políticas de privacidad</p>
-								<p>Políticas de devolución</p>
-							</div>
-		                </div>
-					</div>
-        		</div>
-        		
-				<div class="col-xs-6 col-sm-4 col-md-8">
-        			<div class="animated  slow">
-		                <div class="service-box">
-							<div class="service-icon">
-								
-							</div>
-							<div class="service-desc">
-								<h5>blog</h5>
-								<div class="divider-header"></div>
-								<p>
-								Noticia 1
-								</p>
-								<p>
-								Noticia 2
-								</p>
-								<p>
-								Noticia 3
-								</p>
-								
-							</div>
-		                </div>
-					</div>
-        		</div>
-        	</div>
+            </div>
         </div>
-	</section>
-	<?php echo $__env->make('footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        
+        <div class="chela-container">
+            <div class="chela-container-img">
+              <img src="media/beers/1.png" alt="chela">
+            </div>            
+            <div class="chela-list-info">
+                <header class="chela-list-info-header">
+                    <h2>Apophis<span></span></h2>
+                    <p>Tipo</p>
+                    <a href="" class="more-info">?</a>
+                </header>
+                <div class="chela-list-info-content">
+                    <p class="price old-price">$65.00</p>
+                    <p class="promo-price">$30.00</p>
+                    <p class="volumen">600 ml</p>
+                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chela-container">
+            <div class="chela-container-img">
+              <img src="media/beers/2.png" alt="chela">
+            </div>            
+            <div class="chela-list-info">
+                <header class="chela-list-info-header">
+                    <h2>Trepadora<span></span></h2>
+                    <p>Tipo</p>
+                    <a href="" class="more-info">?</a>
+                </header>
+                <div class="chela-list-info-content">
+                    <p class="price">$30.00</p>
+                    <p class="volumen">600 ml</p>
+                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chela-container">
+            <div class="chela-container-img">
+              <img src="media/beers/3.png" alt="chela">
+            </div>            
+            <div class="chela-list-info">
+                <header class="chela-list-info-header">
+                    <h2>Trepadora <span>Red Ale</span></h2>
+                    <p>Tipo</p>
+                    <a href="" class="more-info">?</a>
+                </header>
+                <div class="chela-list-info-content">
+                    <p class="price old-price">$65.00</p>
+                    <p class="promo-price">$30.00</p>
+                    <p class="volumen">600 ml</p>
+                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chela-container">
+            <div class="chela-container-img">
+              <img src="media/beers/4.png" alt="chela">
+            </div>            
+            <div class="chela-list-info">
+                <header class="chela-list-info-header">
+                    <h2>Tzotzil<span></span></h2>
+                    <p>Ambar</p>
+                    <a href="" class="more-info">?</a>
+                </header>
+                <div class="chela-list-info-content">
+                    <p class="price">$30.00</p>
+                    <p class="volumen">600 ml</p>
+                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chela-container">
+            <div class="chela-container-img">
+              <img src="media/beers/5.png" alt="chela">
+            </div>            
+            <div class="chela-list-info">
+                <header class="chela-list-info-header">
+                    <h2>Tzotzil<span></span></h2>
+                    <p>Lager</p>
+                    <a href="" class="more-info">?</a>
+                </header>
+                <div class="chela-list-info-content">
+                    <p class="price">$30.00</p>
+                    <p class="volumen">600 ml</p>
+                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="chela-container">
+            <div class="chela-container-img">
+              <img src="media/beers/6.png" alt="chela">
+            </div>            
+            <div class="chela-list-info">
+                <header class="chela-list-info-header">
+                    <h2>Tzotzil<span> Miel</span></h2>
+                    <p>Lager</p>
+                    <a href="" class="more-info">?</a>
+                </header>
+                <div class="chela-list-info-content">
+                    <p class="price old-price">$65.00</p>
+                    <p class="promo-price">$30.00</p>
+                    <p class="volumen">600 ml</p>
+                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="chela-container">
+            <div class="chela-container-img">
+              <img src="media/beers/7.png" alt="chela">
+            </div>            
+            <div class="chela-list-info">
+                <header class="chela-list-info-header">
+                    <h2>Tzotzil<span> Porter</span></h2>
+                    <p>Premium</p>
+                    <a href="" class="more-info">?</a>
+                </header>
+                <div class="chela-list-info-content">
+                    <p class="price">$30.00</p>
+                    <p class="volumen">600 ml</p>
+                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="chela-container">
+            <div class="chela-container-img">
+              <img src="media/beers/8.png" alt="chela">
+            </div>            
+            <div class="chela-list-info">
+                <header class="chela-list-info-header">
+                    <h2>Tzotzil<span> Stout</span></h2>
+                    <p>Lager</p>
+                    <a href="" class="more-info">?</a>
+                </header>
+                <div class="chela-list-info-content">
+                    <p class="price">$30.00</p>
+                    <p class="volumen">600 ml</p>
+                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>    
+    
+     
+<!--          CHELA MODAL PARA MOSTRAR LA INFORMACIÓN DE LAS SHELAS-->
+   <div class="chela-modal">                              
+       <div class="chela-modal-container">
+           <div class="chela-header">
+               <h2>Ceveza <span>Melano</span></h2>
+               <a href="" class="exit-modal">Cerrar</a>
+           </div>
+           <div class="chela-info">
+               <div class="chela-info-img">
+                 <img src="media/beers/3.png" alt="chela">
+               </div>               
+               <div class="chela-data">
+                  <div class="data-group">
+                      <p>Estado</p>
+                      <strong>Chiapas</strong>
+                  </div>
+                  <div class="data-group">
+                      <p>Presentación</p>
+                      <strong>355 ml</strong>
+                  </div>
+                  <div class="data-group">
+                      <p>Color</p>
+                      <strong>Oscura</strong>
+                  </div>
+                  <div class="data-group">
+                      <p>Vol. Alc.</p>
+                      <strong>5.1%</strong>
+                  </div>
+                  <div class="data-group">
+                       <p>Estilo</p>
+                       <strong>Dunkelwizen</strong>
+                  </div>
+                  <div class="data-group">
+                        <p>Sabor</p>
+                       <strong>Amargo</strong>
+                  </div>
+                  <div class="data-group">
+                        <p>Temperatura</p>
+                       <strong>4 a 7°C</strong>
+                  </div>  
+               </div>
+           </div>
+           <div class="chela-desc">
+               <p>Digamos que esta es la chela del mundo aunque no lo es, sólo para ver si vende más</p>
+           </div>
+       </div>
+   </div>    
+</section>
+</body>
+</html>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
