@@ -1,8 +1,7 @@
 @extends('header')
 @section('title', 'Accede a tu cuenta')
 @section('page-css')
-<link rel="stylesheet" href="css/login-styles.css"> 
-<link rel="stylesheet" href="css/login-queries.css">
+<link rel="stylesheet" href="css/login-styles.css">
 @endsection
 
 @section('content')
