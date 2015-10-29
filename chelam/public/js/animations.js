@@ -15,7 +15,7 @@ $( document ).ready(function(){
         $('.main-nav').toggleClass('show-nav')
     })
 // Show cart 
-    $('#show-cart').click(function(e){
+    $('.show-cart').click(function(e){
         e.preventDefault()
         if($(window).width() >= 900)
             $('.cart').toggleClass('show-cart')
@@ -44,14 +44,14 @@ $( document ).ready(function(){
 //show chela info
     $('.more-info').click(function(e){
         e.preventDefault()
-        $('.chela-modal').addClass('show-chela-info')
+        var id = this.id;
+        $('.'+id).addClass('show-chela-info')
     })
     
     $('.exit-modal').click(function(e){
         e.preventDefault()
         $('.chela-modal').removeClass('show-chela-info')
     })
-    
 // Cookies
     function setCookie(cname, cvalue, exdays) {
         var d = new Date();
@@ -70,4 +70,26 @@ $( document ).ready(function(){
         }
         return "";
     }
-})
+// Añadir al carrito temporal en header
+    
+    $(".add-to-cart").click(function(e){
+        e.preventDefault();
+        var idCerveza = this.id;
+        $.ajax({
+            url: 'addTempCart',
+            type: "post",
+            data: {'idCerveza':idCerveza, '_token': $('input[name=_token]').val()},
+            success: function(data){
+                if(data=="error login"){
+                    alert("Por favor crea una cuenta o ingresa para hacer tu pedido");
+                }else{
+                    
+                    $("#contentCart").html(data);
+                }
+            },
+            error: function(data){
+                console.log(data);
+            }
+        });  
+    });
+});

@@ -5,8 +5,12 @@ class CervezaController extends Controller {
 
 	public function getAllCervezas(){
 		try{
-			$allCervezas = \DB::table("cervezas")->get();	
-			return \View::make("chelas")->with("allCervezas", $allCervezas);
+			$cervezas = \DB::table("productocerveza")
+			->join("producto", "productocerveza.idProducto", "=", "producto.idProducto")
+			->join("cervezas", "productocerveza.idCerveza", "=", "cervezas.idCerveza")
+			->get();
+
+		return \View::make('chelas')->with("cervezas", $cervezas);	
 		}catch(Exception $e){
 			return \Redirect::to("/");
 		}

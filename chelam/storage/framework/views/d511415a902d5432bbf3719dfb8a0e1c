@@ -45,7 +45,7 @@
         </form>
     </div>
     <div class="chelas-list">
-       
+        <!--
         <div class="chela-container">
             <div class="chela-container-img">
               <img src="media/beers/0.png" alt="chela">
@@ -60,171 +60,74 @@
                     <p class="price old-price">$65.00</p>
                     <p class="promo-price">$30.00</p>
                     <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                    <button type="button" class="add-to-cart">
+                      <i class="fa fa-plus"></i>Agregar al carrito
+                    </button>
                 </div>
             </div>
         </div>
+        -->
+        <?php $cont = 0 ?>
+        <?php foreach($cervezas as $cerveza): ?>
         
         <div class="chela-container">
             <div class="chela-container-img">
-              <img src="media/beers/1.png" alt="chela">
+              <img src="media/beers/<?php echo e($cont); ?>.png" alt="chela">
             </div>            
             <div class="chela-list-info">
                 <header class="chela-list-info-header">
-                    <h2>Apophis<span></span></h2>
-                    <p>Tipo</p>
-                    <a href="" class="more-info">?</a>
+                    <?php
+                    $nombre = explode(" ", $cerveza->Nombre);
+                    if(sizeof($nombre)>0){
+                      ?>
+                      <h2><?php echo e($nombre[0]); ?> <span><?php echo e($nombre[1]); ?></span></h2>  
+                      <?php
+                    }else{
+                      ?>
+                      <h2><?php echo e($cerveza->Nombre); ?></h2>  
+                      <?php
+                    }
+                    ?>
+                    
+                    <p><?php echo e($cerveza->tipo); ?></p>
+                    <a href="" class="more-info" id="<?php echo e($cerveza->idCerveza); ?>">?</a>
                 </header>
                 <div class="chela-list-info-content">
-                    <p class="price old-price">$65.00</p>
-                    <p class="promo-price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
+                    <p class="price">$<?php echo e($cerveza->precio); ?>.00</p>
+                    <p class="volumen"><?php echo e($cerveza->Volumen); ?> ml</p>
+                    <button type="button" class="add-to-cart" id="<?php echo e($cerveza->idCerveza); ?>" ng-click='addCont()'>
+                      <i class="fa fa-plus"></i>Agregar al carrito
+                    </button>
                 </div>
             </div>
         </div>
-        
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/2.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Trepadora<span></span></h2>
-                    <p>Tipo</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/3.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Trepadora <span>Red Ale</span></h2>
-                    <p>Tipo</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price old-price">$65.00</p>
-                    <p class="promo-price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/4.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Tzotzil<span></span></h2>
-                    <p>Ambar</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/5.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Tzotzil<span></span></h2>
-                    <p>Lager</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/6.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Tzotzil<span> Miel</span></h2>
-                    <p>Lager</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price old-price">$65.00</p>
-                    <p class="promo-price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/7.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Tzotzil<span> Porter</span></h2>
-                    <p>Premium</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="chela-container">
-            <div class="chela-container-img">
-              <img src="media/beers/8.png" alt="chela">
-            </div>            
-            <div class="chela-list-info">
-                <header class="chela-list-info-header">
-                    <h2>Tzotzil<span> Stout</span></h2>
-                    <p>Lager</p>
-                    <a href="" class="more-info">?</a>
-                </header>
-                <div class="chela-list-info-content">
-                    <p class="price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <a href="" class="add-to-cart">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
-    
+        <?php $cont++; ?>
+        <?php endforeach; ?>
+    <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>" />
     </div>    
-    
-     
 <!--          CHELA MODAL PARA MOSTRAR LA INFORMACIÓN DE LAS SHELAS-->
-   <div class="chela-modal">                              
+<?php $cont2 = 0 ?>
+<?php foreach($cervezas as $cerveza): ?>
+   <div class="chela-modal <?php echo e($cerveza->idCerveza); ?>">                              
        <div class="chela-modal-container">
            <div class="chela-header">
-               <h2>Ceveza <span>Melano</span></h2>
-               <a href="" class="exit-modal">Cerrar</a>
+                <?php
+                  $nombre = explode(" ", $cerveza->Nombre);
+                  if(sizeof($nombre)>0){
+                    ?>
+                    <h2><?php echo e($nombre[0]); ?> <span><?php echo e($nombre[1]); ?></span></h2>  
+                    <?php
+                  }else{
+                    ?>
+                    <h2><?php echo e($cerveza->Nombre); ?></h2>  
+                    <?php
+                  }
+                ?>
+               <a href="" class="exit-modal" id="<?php echo e($cerveza->idCerveza); ?>">Cerrar</a>
            </div>
            <div class="chela-info">
                <div class="chela-info-img">
-                 <img src="media/beers/3.png" alt="chela">
+                 <img src="media/beers/<?php echo e($cont2); ?>.png" alt="chela">
                </div>               
                <div class="chela-data">
                   <div class="data-group">
@@ -233,35 +136,37 @@
                   </div>
                   <div class="data-group">
                       <p>Presentación</p>
-                      <strong>355 ml</strong>
+                      <strong><?php echo e($cerveza->Volumen); ?> ml</strong>
                   </div>
                   <div class="data-group">
                       <p>Color</p>
-                      <strong>Oscura</strong>
+                      <strong><?php echo e($cerveza->Color); ?></strong>
                   </div>
                   <div class="data-group">
                       <p>Vol. Alc.</p>
-                      <strong>5.1%</strong>
+                      <strong><?php echo e($cerveza->Alcohol); ?>%</strong>
                   </div>
                   <div class="data-group">
                        <p>Estilo</p>
-                       <strong>Dunkelwizen</strong>
+                       <strong><?php echo e($cerveza->Estilo); ?></strong>
                   </div>
                   <div class="data-group">
                         <p>Sabor</p>
-                       <strong>Amargo</strong>
+                       <strong><?php echo e($cerveza->Sabor); ?></strong>
                   </div>
                   <div class="data-group">
                         <p>Temperatura</p>
-                       <strong>4 a 7°C</strong>
+                       <strong><?php echo e($cerveza->Temperatura); ?>°C</strong>
                   </div>  
                </div>
            </div>
            <div class="chela-desc">
-               <p>Digamos que esta es la chela del mundo aunque no lo es, sólo para ver si vende más</p>
+               <p><?php echo e($cerveza->Descripcion); ?>.</p>
            </div>
        </div>
    </div>    
+   <?php $cont2 ++; ?>
+   <?php endforeach; ?>
 </section>
 </body>
 </html>

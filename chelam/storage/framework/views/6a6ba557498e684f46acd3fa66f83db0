@@ -1,13 +1,16 @@
-<?php echo $__env->make('header-start', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-    <link rel="stylesheet" href="css/registro-styles.css">
-    <link rel="stylesheet" href="css/registro-queries.css">
-<?php echo $__env->make('header-end', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->startSection('title', 'Regístrate'); ?>
+<?php $__env->startSection('page-css'); ?>
+<link rel="stylesheet" href="css/registro-styles.css"> 
+<link rel="stylesheet" href="css/registro-queries.css">
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
 <section class="to-login">
         <h2>¿Ya tienes una cuenta?</h2>
         <p>No esperes más, <a href="/login">Inicia tu sesión aquí</a>.</p>
     </section>
     <section class="register">
-        <form action="user.html" class="register-form">
+        <form action="crearusuario" class="register-form" method="post">
             <div class="register-group">
                 <label for="user">Ingrese un nombre de usuario</label>
                 <input type="text" name="user" id="user">
@@ -23,9 +26,12 @@
             <div class="register-group">
                 <label for="pass2">Repita su contraseña</label>
                 <input type="password" name="pass2" id="pass2">
+                <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>" />
             </div>
             <input type="submit" value="Crear cuenta">
         </form>
     </section>
 </body>
 </html>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

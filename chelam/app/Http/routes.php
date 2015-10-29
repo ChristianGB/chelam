@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('chelas', 'HomeController@chelasView');
+Route::get('chelas', 'CervezaController@getAllCervezas');
 Route::get('chelapack', 'HomeController@chelaPackView');
 
 Route::get('listaCompras', 'HomeController@listaComprasView');
@@ -30,6 +30,8 @@ Route::get('olvidarSesion', 'UserController@olvidarSesion');
 //identificar usuario
 Route::post('identifcar', 'UserController@identificarUsuario');
 
+Route::post('addTempCart', 'ProductoController@addTempCart');
+
 Route::filter('old', function()
 {
     if (\Session::get("nameUsuarioSesion")==null)
@@ -42,11 +44,3 @@ Route::get('user', array('before' => 'old', function()
 {
     return \View::make("user");
 }));
-
-	
-/*
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
-*/

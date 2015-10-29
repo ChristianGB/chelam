@@ -33,7 +33,8 @@ class HomeController extends Controller {
 	}
 
 	public function chelasView(){
-		return view('chelas');	
+		
+		
 	}
 
 	public function chelaPackView(){

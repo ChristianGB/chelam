@@ -8,20 +8,23 @@ class UserController extends Controller{
 	|-------------------------------------
 	*/
 
+	/*Constants*/
+ 	
+
 
 	public function __construct(){
 
 	}
 
 	public function iniciarSesion(){
-		$userName = $_POST["userName"];
-		$password = $_POST["password"];
+		$userName = $_POST["user"];
+		$password = $_POST["pass"];
 	}
 
 	public function crearUsuario(){
 		
-		$userName = $_POST["userName"];
-		$password = $_POST["password"];
+		$userName = $_POST["user"];
+		$password = $_POST["pass"];
 		$email = $_POST["email"];
 
 		$encriptPass = md5($password);
@@ -34,7 +37,14 @@ class UserController extends Controller{
 			    )
 			);
 
-			\DB::table('usuario')->insert(
+			\DB::table('cliente')->insert(
+			    array(	
+		    		'idObjeto' => $id,
+		    		'idTipoCliente' => 1
+			    )
+			);
+
+			$idUser = \DB::table('usuario')->insertGetId(
 			    array(	
 			    	'idObjeto' => $id,
 		    		'userName' => $userName, 
@@ -42,9 +52,9 @@ class UserController extends Controller{
 		    		'email' => $email
 			    )
 			);
-			\Session::put("idUsuarioSesion", $id);
+			\Session::put("idUsuarioSesion", $idUser);
 			\Session::put("nameUsuarioSesion", $userName);
-			return \Redirect::to("/");
+			return \Redirect::to("user");
 		}catch(Exception $e){
 			return \Redirect::to("registrar");
 		}
@@ -54,6 +64,7 @@ class UserController extends Controller{
 	public function olvidarSesion(){
 		\Session::forget("idUsuarioSesion");
 		\Session::forget("nameUsuarioSesion");
+		\Session::forget("cantArt");
 		return \Redirect::to("/");
 	}
 
@@ -68,10 +79,22 @@ class UserController extends Controller{
 			->where('email', $email)
 			->where('password', $encriptPass)
 			->first();
+
+			$clienteInfo = \DB::table("objeto")
+			->join("usuario", "objeto.idObjeto", "=", "usuario.idObjeto")
+			->join("cliente", "objeto.idObjeto", "=", "cliente.idObjeto")
+			->where("usuario.idUsuario", $user->idUsuario)
+			->first();
+
+			$cantProductos = \DB::table('clientepedido')
+			->where("idCliente", $clienteInfo->idCliente)
+			->count();
+
 			if($user==null){
 				return \Redirect::to("/")->with('messageLogin', 'No se encontro usuario');	
 			}
 			\Session::put("idUsuarioSesion", $user->idUsuario);
+			\Session::put("cantArt", $cantProductos);
 			\Session::put("nameUsuarioSesion", $user->userName);
 			return \Redirect::to("user");
 		}catch(Exception $e){
@@ -79,6 +102,4 @@ class UserController extends Controller{
 		}
 		
 	}
-
-
 }

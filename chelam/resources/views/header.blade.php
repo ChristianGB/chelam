@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ Session::token() }}">
 
     <title>Chelam | @yield('title')</title>
     
@@ -13,6 +14,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <script src="js/animations.js"></script>
+    <script src="js/angular.min.js"></script>
+    
     <link rel="shortcut icon" type="image/png" href="img/chelas/imago_color.png"/>
 
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -45,7 +48,7 @@
     <div class="main-nav-btn">
         <i class="fa fa-bars fa-2x"></i>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav" ng-controller="NavController">
         <a href="/chelas">Chelas</a>
         <a href="/chelapack">Chela<strong>pack</strong></a>
         <a href="/mayoreo">Negocio</a>
@@ -58,21 +61,25 @@
         }else{
           ?>
           <a href="user" id="show-login"><?php echo \Session::get("nameUsuarioSesion") ?></a>
+          <a href="olvidarSesion" id="show-login">Salir</a>
           <?php
         }
         ?>
+        <a href="#" class="show-cart" ng-model="cantArt" ><i class="fa fa-shopping-cart"></i><p id="contentCart"><?php echo "".\Session::get("cantArt") ?></p> </a>
         
-        <a href="#" id="show-cart"><i class="fa fa-shopping-cart"></i></a>
     </nav>
-
+ 
+  <?php
+  if(\Session::get("nameUsuarioSesion") == null){
+    ?>
     <div class="login-container">
-        <form action="login" class="login-form" method="post">
+        <form action="identifcar" class="login-form" method="post">
             <div class="input-group">
-                <input type="email" id="user" name="user">
+                <input type="email" id="user" name="email">
                 <label for="user" class="label-movement">Email</label>
             </div>
             <div class="input-group">
-                <input type="password" id="pass" name="pass">
+                <input type="password" id="pass" name="password">
                 <label for="pass">Contraseña</label>
                 
             </div>
@@ -81,8 +88,13 @@
                 <input type="submit" id="submit" value="Ingresar">                    
                 <a href="/registrar"><strong>Quiero crear una cuenta</strong></a>
             </div>
+            <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
         </form>
     </div>
+    <?php
+  }
+  ?>
+    
 
     <div class="cart">
       <header class="cart-header">
@@ -99,36 +111,13 @@
           </div>                                                     
       </div>
       <div class="cart-list">
+        <!--
           <div class="cart-list-group">
               <a href="">X</a>
-              <p class="chela-name"><strong>Trepadora</strong> Red Ale</p>
+              <p class="chela-name" id="nameTempProductCart"><strong id="nameTempProductCartStrong">Trepadora</strong> Red Ale</p>
               <p class="chela-amount">1 x $65</p>
           </div>
-          <div class="cart-list-group">
-              <a href="">X</a>
-              <p class="chela-name"><strong>Tzotzil</strong> Porter</p>
-              <p class="chela-amount">1 x $65</p>
-          </div>
-          <div class="cart-list-group">
-              <a href="">X</a>
-              <p class="chela-name"><strong>Trepadora</strong> Red Ale</p>
-              <p class="chela-amount">1 x $65</p>
-          </div>
-          <div class="cart-list-group">
-              <a href="">X</a>
-              <p class="chela-name"><strong>Tzotzil</strong> Porter</p>
-              <p class="chela-amount">1 x $65</p>
-          </div>
-          <div class="cart-list-group">
-              <a href="">X</a>
-              <p class="chela-name"><strong>Trepadora</strong> Red Ale</p>
-              <p class="chela-amount">1 x $65</p>
-          </div>
-          <div class="cart-list-group">
-              <a href="">X</a>
-              <p class="chela-name"><strong>Tzotzil</strong> Porter</p>
-              <p class="chela-amount">1 x $65</p>
-          </div>
+        -->
       </div>
       <footer class="cart-list-footer">
           <p class="chelapack-total">Total: <strong>$195.00</strong></p>

@@ -47,7 +47,7 @@
         </form>
     </div>
     <div class="chelas-list">
-       
+        <!--
         <div class="chela-container">
             <div class="chela-container-img">
               <img src="media/beers/0.png" alt="chela">
@@ -68,40 +68,68 @@
                 </div>
             </div>
         </div>
-
+        -->
+        <?php $cont = 0 ?>
+        @foreach ($cervezas as $cerveza)
+        
         <div class="chela-container">
             <div class="chela-container-img">
-              <img src="media/beers/8.png" alt="chela">
+              <img src="media/beers/{{ $cont }}.png" alt="chela">
             </div>            
             <div class="chela-list-info">
                 <header class="chela-list-info-header">
-                    <h2>Tzotzil<span> Stout</span></h2>
-                    <p>Lager</p>
-                    <a href="" class="more-info">?</a>
+                    <?php
+                    $nombre = explode(" ", $cerveza->Nombre);
+                    if(sizeof($nombre)>0){
+                      ?>
+                      <h2>{{ $nombre[0] }} <span>{{ $nombre[1] }}</span></h2>  
+                      <?php
+                    }else{
+                      ?>
+                      <h2>{{ $cerveza->Nombre }}</h2>  
+                      <?php
+                    }
+                    ?>
+                    
+                    <p>{{ $cerveza->tipo }}</p>
+                    <a href="" class="more-info" id="{{ $cerveza->idCerveza }}">?</a>
                 </header>
                 <div class="chela-list-info-content">
-                    <p class="price">$30.00</p>
-                    <p class="volumen">600 ml</p>
-                    <button type="button" class="add-to-cart">
+                    <p class="price">${{ $cerveza->precio }}.00</p>
+                    <p class="volumen">{{ $cerveza->Volumen }} ml</p>
+                    <button type="button" class="add-to-cart" id="{{ $cerveza->idCerveza }}" ng-click='addCont()'>
                       <i class="fa fa-plus"></i>Agregar al carrito
                     </button>
                 </div>
             </div>
         </div>
-    
+        <?php $cont++; ?>
+        @endforeach
+    <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
     </div>    
-    
-     
 <!--          CHELA MODAL PARA MOSTRAR LA INFORMACIÓN DE LAS SHELAS-->
-   <div class="chela-modal">                              
+<?php $cont2 = 0 ?>
+@foreach ($cervezas as $cerveza)
+   <div class="chela-modal {{ $cerveza->idCerveza }}">                              
        <div class="chela-modal-container">
            <div class="chela-header">
-               <h2>Nombre de <span>Cerveza</span></h2>
-               <a href="" class="exit-modal">Cerrar</a>
+                <?php
+                  $nombre = explode(" ", $cerveza->Nombre);
+                  if(sizeof($nombre)>0){
+                    ?>
+                    <h2>{{ $nombre[0] }} <span>{{ $nombre[1] }}</span></h2>  
+                    <?php
+                  }else{
+                    ?>
+                    <h2>{{ $cerveza->Nombre }}</h2>  
+                    <?php
+                  }
+                ?>
+               <a href="" class="exit-modal" id="{{ $cerveza->idCerveza }}">Cerrar</a>
            </div>
            <div class="chela-info">
                <div class="chela-info-img">
-                 <img src="media/beers/3.png" alt="chela">
+                 <img src="media/beers/{{ $cont2 }}.png" alt="chela">
                </div>               
                <div class="chela-data">
                   <div class="data-group">
@@ -110,35 +138,37 @@
                   </div>
                   <div class="data-group">
                       <p>Presentación</p>
-                      <strong>355 ml</strong>
+                      <strong>{{ $cerveza->Volumen }} ml</strong>
                   </div>
                   <div class="data-group">
                       <p>Color</p>
-                      <strong>Oscura</strong>
+                      <strong>{{ $cerveza->Color }}</strong>
                   </div>
                   <div class="data-group">
                       <p>Vol. Alc.</p>
-                      <strong>5.1%</strong>
+                      <strong>{{ $cerveza->Alcohol }}%</strong>
                   </div>
                   <div class="data-group">
                        <p>Estilo</p>
-                       <strong>Dunkelwizen</strong>
+                       <strong>{{ $cerveza->Estilo }}</strong>
                   </div>
                   <div class="data-group">
                         <p>Sabor</p>
-                       <strong>Amargo</strong>
+                       <strong>{{ $cerveza->Sabor }}</strong>
                   </div>
                   <div class="data-group">
                         <p>Temperatura</p>
-                       <strong>4 a 7°C</strong>
+                       <strong>{{ $cerveza->Temperatura }}°C</strong>
                   </div>  
                </div>
            </div>
            <div class="chela-desc">
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit saepe voluptatum, nulla debitis atque at molestiae, esse iure quisquam dolorem neque alias sed vero! Iste quae ratione tempora amet beatae.</p>
+               <p>{{ $cerveza->Descripcion }}.</p>
            </div>
        </div>
    </div>    
+   <?php $cont2 ++; ?>
+   @endforeach
 </section>
 </body>
 </html>

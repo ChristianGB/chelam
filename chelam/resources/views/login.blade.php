@@ -7,14 +7,14 @@
 
 @section('content')
 <section class="login">
-<form action="user.html" class="login-form">
+<form action="identifcar" class="login-form" method="POST">
     <div class="login-group">
         <label for="email">Ingrese su correo</label>
         <input type="email" name="email" id="email">
     </div>
     <div class="login-group">
         <label for="pass">Ingrese su contraseña</label>
-        <input type="password" name="pass" id="pass">
+        <input type="password" name="password" id="pass">
         <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
     </div>
     <a href="#">¿Olvidaste tu contraseña?</a>

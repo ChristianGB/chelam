@@ -11,7 +11,7 @@
         <p>No esperes más, <a href="/login">Inicia tu sesión aquí</a>.</p>
     </section>
     <section class="register">
-        <form action="user.html" class="register-form">
+        <form action="crearusuario" class="register-form" method="post">
             <div class="register-group">
                 <label for="user">Ingrese un nombre de usuario</label>
                 <input type="text" name="user" id="user">
