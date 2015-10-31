@@ -10,14 +10,20 @@ html, body{
     height: 100%;
 }
 
+body{    
+    margin-top: 94px;
+}
+
 p, a, h2, h3{
     font-family: 'Lato', sans-serif;
 }
 
 input[type="submit"],
+input[type="button"],
 input[type="text"],
 input[type="email"],
 input[type="password"],
+button
 {
     appearance: none;
     border-radius: 0px;
@@ -130,6 +136,10 @@ a{ text-decoration: none; color: #E73742; }
 
 /* main header styles */
 .login-container{ display: none; }
+.main-nav-btn .fa{
+    cursor: pointer;
+}
+
 .main-header{
     width: 100%;
     height: 100px;    
@@ -138,9 +148,9 @@ a{ text-decoration: none; color: #E73742; }
     background: url(../media/walls/pleca_sup.png) repeat-x;
     background-size: contain;
     border-top: 7px solid #E73742;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
     
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
@@ -224,3 +234,181 @@ footer{
     background: url(../media/walls/en-construccion.png) no-repeat top;
     background-size: cover;
 }
+
+/* CARRITO DE COMPRA */
+.show-cart-btn{
+    position: relative; 
+    transition: all 0.8s;
+    margin-right: 20px;
+    cursor: pointer;
+}   
+
+.new-element-mark{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    width: 14px;
+    height: 14px;
+
+    position: absolute;
+    top: -12px;
+    right: -10px;
+
+    display: block;
+    background: tomato;
+    border-radius: 10%;
+    opacity: 0;
+    
+    transition: all 0.8s;
+}
+
+.new-element{ opacity: 1; }
+.cart-btn-anim{ color: dodgerblue; }
+
+.cart{
+    width: 100%;
+    background: whitesmoke;
+    padding: 20px;
+
+    text-align: center;
+    box-shadow: 0 3px 7px 0 rgba(0,0,0,0.2);
+
+    border-top: 7px solid #2C3E50;
+
+    position: absolute;
+    left: 0;
+    top: 93px;
+
+    display: none;
+    flex-flow: column;
+
+    overflow-y: auto;
+}
+
+.cart-header h2{
+    font-family: 'Lato', sans-serif;
+    color: #22313F;
+    padding: 10px;
+}
+
+.cart-header h2:after{
+    content: '';
+    display: block;
+    margin: 5px auto;
+    width: 200px;
+    height: 5px;
+
+    background: #2C3E50;
+}
+
+.cart-resume{
+    display: flex;
+    margin: 10px 0;
+
+    justify-content: space-between;
+}
+
+.cart-resume  img{
+    display: none;
+}
+
+.cart-resume .cart-resume-data{
+    text-align: left;
+}
+
+.cart-resume .cart-resume-data #chelapack-name,
+.cart-resume .cart-resume-data #chelapack-status
+{
+    display: none;
+}
+
+.cart-resume .cart-resume-data h3,
+.cart-resume .cart-resume-data p{
+    font-family: 'Lato', sans-serif;
+    color: #1c1c1c;
+    font-size: 1.2em;
+}
+
+.cart-resume .cart-resume-data #chelapack-size{
+    color: #1C4E9D;
+}
+
+.cart-resume .cart-resume-data #mini-total{
+    color: #E73742;
+}
+
+.cart-resume .cart-resume-data .nota{
+    font-size: 0.9em;
+    text-decoration: underline;
+    color: #1C4E9D;
+}
+
+.cart-list{
+    padding: 10px;
+    
+    margin-top: 10px;
+
+    height: 150px;
+    background: white;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2) inset;
+
+    border: 1px solid rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-flow: column;
+
+    overflow-y: auto;
+}
+
+.cart-list-group{
+    width: 100%;
+    position: relative;
+    display: table;
+    padding: 10px;
+
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.cart-list-group p{
+    display: table-cell;
+}
+
+.cart-list-group .chela-name{
+    width: 50%;
+    text-align: left;
+}
+
+.cart-list-group .chela-amount{
+    width: 40%;
+}
+
+.cart-list-group a{
+    position: absolute;
+    left: 10px;
+
+}
+
+.cart-list-footer{
+    padding: 0px;
+    background: none;
+}
+
+.chelapack-total{
+    font-size: 1.4em;
+    padding: 15px;
+}
+
+.cart #comprar-chela{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 1.3em;
+    background: #E73742;
+}
+
+.show-cart{
+    display: flex;
+}
+

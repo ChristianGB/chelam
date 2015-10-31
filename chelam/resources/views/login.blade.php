@@ -7,6 +7,7 @@
 @section('content')
 <section class="login">
 <form action="identifcar" class="login-form" method="POST">
+    <a href="/userVista">Ver vista de usuario</a>
     <div class="login-group">
         <label for="email">Ingrese su correo</label>
         <input type="email" name="email" id="email">

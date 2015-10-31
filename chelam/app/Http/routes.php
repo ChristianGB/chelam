@@ -14,6 +14,7 @@
 Route::get('/', 'HomeController@index');
 Route::get('chelas', 'CervezaController@getAllCervezas');
 Route::get('chelapack', 'HomeController@chelaPackView');
+Route::get('userVista', 'HomeController@userVistaView');
 
 Route::get('listaCompras', 'HomeController@listaComprasView');
 Route::get('mayoreo', 'HomeController@mayoreoView');
