@@ -39,10 +39,6 @@ class ProductoController extends Controller {
 					)
 				);	
 
-
-
-				
-
 				$cantProductos = \DB::table('clientepedido')
 				->where("idCliente", $clienteInfo->idCliente)
 				->count();
