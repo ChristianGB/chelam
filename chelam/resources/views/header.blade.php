@@ -42,11 +42,12 @@
 <!--   Fin ventana modal  -->
 
 <header class="main-header">
-    <a href="/">
-        <img src="media/logos/tipo_blc.png" alt="Chelam">
-    </a>
+    <a href="/"><img src="media/logos/tipo_blc.png" alt="Chelam"></a>
     <div class="main-nav-btn">
-        <i class="fa fa-bars fa-2x"></i>
+        <i class="fa fa-shopping-cart fa-2x show-cart-btn">
+            <span class="new-element-mark">+</span>
+        </i>
+        <i class="fa fa-bars fa-2x show-nav-btn"></i>
     </div>
     <nav class="main-nav" ng-controller="NavController">
         <a href="/chelas">Chelas</a>
@@ -65,15 +66,16 @@
           <?php
         }
         ?>
-        <a href="#" class="show-cart" ng-model="cantArt" ><i class="fa fa-shopping-cart"></i><p id="contentCart"><?php echo "".\Session::get("cantArt") ?></p> </a>
-        
-    </nav>
- 
-  <?php
+        <a href="#" class="show-cart" ng-model="cantArt" ><i class="fa fa-shopping-cart show-cart-btn">
+          <span class="new-element-mark">+</span>
+        </i><p id="contentCart"><?php echo "".\Session::get("cantArt") ?></p></a> 
+    </nav> 
+    <?php
   if(\Session::get("nameUsuarioSesion") == null){
     ?>
     <div class="login-container">
-        <form action="identifcar" class="login-form" method="post">
+         <form action="identifcar" class="login-form" method="post">
+            <a href="/userVista">Ver vista de usuario</a>        
             <div class="input-group">
                 <input type="email" id="user" name="email">
                 <label for="user" class="label-movement">Email</label>

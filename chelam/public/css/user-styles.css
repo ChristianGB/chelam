@@ -7,7 +7,7 @@
 }
 
 .user-active{
-    border-top: 3px solid #1C4E9D;
+    border-bottom: 3px solid #1C4E9D;
 }
 
 /* User nav */
@@ -27,15 +27,14 @@
 
 /* User panel */
 .user-panel{
-    height: 100vh;
-    padding-top: 40px;
-    
+    padding: 10px;    
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
 
     .user-panel .user-profile{
         max-width: 1000px;
+        width: 80%;
         height: 100%;
         margin: 0 auto;
 
@@ -52,8 +51,8 @@
             align-items: center;
             
             margin-bottom: 20px;
-            padding-bottom: 10px;
             border-bottom: 5px solid #1C4E9D;
+            padding: 20px;
         }
 
             .user-panel .user-profile .user-header .user-img{
@@ -78,4 +77,77 @@
                 font-family: 'Lato', sans-serif;
                 font-weight: 600;
                 color: #22313F;
+                margin-bottom: 20px;
             }
+
+.user-panel .user-profile .user-data .my-data .data-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+.user-panel .user-profile .user-data .my-data .data-group .label{
+    font-weight: 600;
+    color: #212121;
+    font-size: 1.2em;
+}
+
+.data{
+    font-family: 'Lato', sans-serif;
+    color: #212121;
+}
+
+.send-dir{
+    padding: 20px;
+    background: whitesmoke;
+    font-size: 1.2em;
+}
+
+/* Historial de Compras*/
+.user-historial{
+    display: none;
+    
+    width: 80%;
+    margin: auto;
+}  
+
+.user-historial-header{
+    display: none;
+}
+
+.hist-elem{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 10px;    
+    text-align: center;
+}
+
+.hist-elem:nth-child(odd){
+    background: whitesmoke;
+}
+
+.hist-fecha{
+    font-size: 1.1em;
+    font-weight: 600;
+    
+    margin-bottom: 10px;
+}
+
+.hist-productos{
+    margin-bottom: 10px;
+}
+
+.hist-producto-group{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.hist-costo{
+    font-weight: 600
+}
+

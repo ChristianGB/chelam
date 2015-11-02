@@ -32,8 +32,7 @@ class HomeController extends Controller {
 		return view('index');
 	}
 
-	public function chelasView(){
-		
+	public function chelasView(){		
 		
 	}
 
@@ -59,7 +58,7 @@ class HomeController extends Controller {
 	public function registrarUsuario(){
 		return view('registrar');
 	}
-	public function userView(){
+	public function userVistaView(){
 		return view('user');
 	}
 

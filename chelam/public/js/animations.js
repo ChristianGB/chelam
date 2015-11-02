@@ -11,16 +11,25 @@ $( document ).ready(function(){
         window.location.href = "/"
     })
     
-    $('.main-nav-btn').click(function(){
+    $('.show-nav-btn').click(function(){
         $('.main-nav').toggleClass('show-nav')
     })
+    
+// Elemento agregado a carrito
+    $('.add-to-cart').click(function(){
+        $('.new-element-mark').addClass('new-element')
+        $('.show-cart-btn').addClass('cart-btn-anim')
+    })
+    
+    $('.show-cart-btn').click(function(){
+        $('.new-element-mark').removeClass('new-element')
+        $('.show-cart-btn').removeClass('cart-btn-anim')
+    })
+    
 // Show cart 
-    $('.show-cart').click(function(e){
+    $('.show-cart-btn').click(function(e){
         e.preventDefault()
-        if($(window).width() >= 900)
-            $('.cart').toggleClass('show-cart')
-        else
-            window.location.href = "/chelas"
+        $('.cart').toggleClass('show-cart')
     })
 
 // Show login 
@@ -44,14 +53,33 @@ $( document ).ready(function(){
 //show chela info
     $('.more-info').click(function(e){
         e.preventDefault()
-        var id = this.id;
-        $('.'+id).addClass('show-chela-info')
+        $('.chela-modal').addClass('show-chela-info')
     })
     
     $('.exit-modal').click(function(e){
         e.preventDefault()
         $('.chela-modal').removeClass('show-chela-info')
     })
+
+//User nav
+    $('#toHistorial').click(function(e){
+        e.preventDefault()
+        $('#toPerfil').removeClass('user-active')
+        $('#toHistorial').addClass('user-active')
+        
+        $('.user-profile').fadeOut()
+        $('.user-historial').delay(600).fadeIn()        
+    })
+    
+    $('#toPerfil').click(function(e){
+        e.preventDefault()
+        $('#toHistorial').removeClass('user-active')
+        $('#toPerfil').addClass('user-active')
+        
+        $('.user-historial').fadeOut()      
+        $('.user-profile').delay(600).fadeIn()  
+    })
+    
 // Cookies
     function setCookie(cname, cvalue, exdays) {
         var d = new Date();
@@ -70,6 +98,7 @@ $( document ).ready(function(){
         }
         return "";
     }
+
 // Añadir al carrito temporal en header
     
     $(".add-to-cart").click(function(e){
@@ -82,8 +111,7 @@ $( document ).ready(function(){
             success: function(data){
                 if(data=="error login"){
                     alert("Por favor crea una cuenta o ingresa para hacer tu pedido");
-                }else{
-                    
+                }else{                    
                     $("#contentCart").html(data);
                 }
             },
