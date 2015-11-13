@@ -86,8 +86,8 @@ class UserController extends Controller{
 			->where("usuario.idUsuario", $user->idUsuario)
 			->first();
 
-			$cantProductos = \DB::table('clientepedido')
-			->where("idCliente", $clienteInfo->idCliente)
+			$cantProductos = \DB::table('productopedido')
+			->where("idPedido", $clienteInfo->idPedido)
 			->count();
 
 			if($user==null){
@@ -96,10 +96,19 @@ class UserController extends Controller{
 			\Session::put("idUsuarioSesion", $user->idUsuario);
 			\Session::put("cantArt", $cantProductos);
 			\Session::put("nameUsuarioSesion", $user->userName);
+
 			return \Redirect::to("user");
 		}catch(Exception $e){
 			return \Redirect::to("/");
 		}
 		
+	}
+
+	public function getInfoUser(){
+		$user = \DB::table('usuario')
+		->where('idUsuario', \Session::get("idUsuarioSesion"))
+		->first();
+
+		return $user;
 	}
 }

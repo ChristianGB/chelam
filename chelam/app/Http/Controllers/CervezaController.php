@@ -15,5 +15,15 @@ class CervezaController extends Controller {
 			return \Redirect::to("/");
 		}
 	}
+
+	public function getCervezasById($idCerveza){
+		$cerveza = \DB::table("productocerveza")
+			->join("producto", "productocerveza.idProducto", "=", "producto.idProducto")
+			->join("cervezas", "productocerveza.idCerveza", "=", "cervezas.idCerveza")
+			->where("cervezas.idCerveza", $idCerveza)
+			->first();		
+
+		return $cerveza;
+	}
 }
 ?>

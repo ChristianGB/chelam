@@ -1,12 +1,14 @@
 @extends('header')
-
-@section('title', 'UsuarioX')
+<?php $usuario = \App::make("App\Http\Controllers\UserController")->getInfoUser(); ?>
+@section('title', $usuario->userName )
 @section('page-css')
 <link rel="stylesheet" href="css/user-styles.css">
 @endsection
 
 @section('content')
+
 <nav class="user-nav">
+<<<<<<< HEAD
     <a href="" class="user-active" id="toPerfil">Perfil</a>
     <a href="" id="toHistorial">Historial de Compras</a>
 </nav>
@@ -41,6 +43,45 @@
                 <div class="data-group">
                     <p class="label">Género</p>
                     <p class="data">Indefinido</p>
+=======
+        <a href="" class="user-active" id="toPerfil">Perfil</a>
+        <a href="" id="toHistorial">Historial de Compras</a>
+    </nav>
+    <section class="user-panel">
+        <section class="user-profile">
+            <div class="user-header">
+               <div class="user-img">                   
+                    <img src="media/icons/user.jpg" alt="Image">
+               </div>
+               <h2>{{ $usuario->userName }}</h2>
+               <a href="" id="edit-data">Editar mis datos</a>
+            </div>
+            <div class="user-data">                
+                <h2 class="data-title">Datos personales</h2>
+                <div class="my-data">
+                    <div class="data-group">
+                        <p class="label">Nombre</p>
+                        <p class="data">{{ $usuario->userName }}</p>
+                    </div>
+                    <div class="data-group">
+                        <p class="label">Email</p>
+                        <p class="data">{{ $usuario->email }}</p>
+                    </div>
+                    <!--
+                    <div class="data-group">
+                        <p class="label">Celular</p>
+                        <p class="data">XXX XXX XX XX</p>
+                    </div>
+                    <div class="data-group">
+                        <p class="label">Cumpleaños</p>
+                        <p class="data">dd/mm/aaa</p>
+                    </div>
+                    <div class="data-group">
+                        <p class="label">Género</p>
+                        <p class="data">Indefinido</p>
+                    </div>
+                -->
+>>>>>>> f2a44715727ad77a9d784a11afc30ba7558c10a7
                 </div>
             </div>
             <h2 class="data-title">Direcciones de envío</h2>
