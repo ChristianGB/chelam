@@ -1,12 +1,13 @@
 @extends('header')
-
-@section('title', 'UsuarioX')
+<?php $usuario = \App::make("App\Http\Controllers\UserController")->getInfoUser(); ?>
+@section('title', $usuario->userName )
 @section('page-css')
 <link rel="stylesheet" href="css/user-styles.css">
 <link rel="stylesheet" href="css/user-queries.css">
 @endsection
 
 @section('content')
+
 <nav class="user-nav">
         <a href="" class="user-active" id="toPerfil">Perfil</a>
         <a href="" id="toHistorial">Historial de Compras</a>
@@ -17,7 +18,7 @@
                <div class="user-img">                   
                     <img src="media/icons/user.jpg" alt="Image">
                </div>
-               <h2>Usuario X</h2>
+               <h2>{{ $usuario->userName }}</h2>
                <a href="" id="edit-data">Editar mis datos</a>
             </div>
             <div class="user-data">                
@@ -25,12 +26,13 @@
                 <div class="my-data">
                     <div class="data-group">
                         <p class="label">Nombre</p>
-                        <p class="data">Usuario X</p>
+                        <p class="data">{{ $usuario->userName }}</p>
                     </div>
                     <div class="data-group">
                         <p class="label">Email</p>
-                        <p class="data">correo@correo.es</p>
+                        <p class="data">{{ $usuario->email }}</p>
                     </div>
+                    <!--
                     <div class="data-group">
                         <p class="label">Celular</p>
                         <p class="data">XXX XXX XX XX</p>
@@ -43,6 +45,7 @@
                         <p class="label">Género</p>
                         <p class="data">Indefinido</p>
                     </div>
+                -->
                 </div>
                 <h2 class="data-title">Direcciones de envío</h2>
                 <p class="send-dir"><strong>Principal <br></strong>Av. de los Melocotones secos. <br>

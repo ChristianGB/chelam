@@ -42,11 +42,12 @@
 <!--   Fin ventana modal  -->
 
 <header class="main-header">
-    <a href="/">
-        <img src="media/logos/tipo_blc.png" alt="Chelam">
-    </a>
+    <a href="/"><img src="media/logos/tipo_blc.png" alt="Chelam"></a>
     <div class="main-nav-btn">
-        <i class="fa fa-bars fa-2x"></i>
+        <i class="fa fa-shopping-cart fa-2x show-cart-btn">
+            <span class="new-element-mark">+</span>
+        </i>
+        <i class="fa fa-bars fa-2x show-nav-btn"></i>
     </div>
     <nav class="main-nav" ng-controller="NavController">
         <a href="/chelas">Chelas</a>
@@ -65,15 +66,16 @@
           <?php
         }
         ?>
-        <a href="#" class="show-cart" ng-model="cantArt" ><i class="fa fa-shopping-cart"></i><p id="contentCart"><?php echo "".\Session::get("cantArt") ?></p> </a>
-        
-    </nav>
- 
-  <?php
+        <a href="#" class="show-cart" ng-model="cantArt" ><i class="fa fa-shopping-cart show-cart-btn">
+          <span class="new-element-mark">+</span>
+        </i><p id="contentCart"><?php echo "".\Session::get("cantArt") ?></p></a> 
+    </nav> 
+    <?php
   if(\Session::get("nameUsuarioSesion") == null){
     ?>
     <div class="login-container">
-        <form action="identifcar" class="login-form" method="post">
+         <form action="identifcar" class="login-form" method="post">
+            <a href="/userVista">Ver vista de usuario</a>        
             <div class="input-group">
                 <input type="email" id="user" name="email">
                 <label for="user" class="label-movement">Email</label>
@@ -110,14 +112,25 @@
               <p class="nota">Envío incluido a todo México</p>
           </div>                                                     
       </div>
-      <div class="cart-list">
-        <!--
-          <div class="cart-list-group">
-              <a href="">X</a>
-              <p class="chela-name" id="nameTempProductCart"><strong id="nameTempProductCartStrong">Trepadora</strong> Red Ale</p>
-              <p class="chela-amount">1 x $65</p>
-          </div>
-        -->
+      <div class="cart-list" id="cart-list">
+        <?php
+        $cervezas = \App::make("App\Http\Controllers\CarroController")->getPedidoCervezas();
+
+        if($cervezas!=0){
+          foreach ($cervezas as $key) {
+            ?>
+            <div class="cart-list-group">
+                <a href="">X</a>
+                <p class="chela-name" id="nameTempProductCart"><strong id="nameTempProductCartStrong"><?php echo e($key->Nombre); ?></strong></p>
+                <p class="chela-amount">1 x $65</p>
+            </div>
+            <?php
+          }
+        }
+        ?>  
+        
+          
+        
       </div>
       <footer class="cart-list-footer">
           <p class="chelapack-total">Total: <strong>$195.00</strong></p>

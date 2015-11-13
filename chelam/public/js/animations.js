@@ -96,7 +96,7 @@ $( document ).ready(function(){
             while (c.charAt(0)==' ') c = c.substring(1);
             if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
         }
-        return "";
+        return "";  
     }
 
 // Añadir al carrito temporal en header
@@ -111,8 +111,40 @@ $( document ).ready(function(){
             success: function(data){
                 if(data=="error login"){
                     alert("Por favor crea una cuenta o ingresa para hacer tu pedido");
-                }else{                    
-                    $("#contentCart").html(data);
+                }else{
+                    var myData = JSON.parse(data);
+                    $("#contentCart").html(myData.cantProductos);
+
+                    var cajaCerveza = document.createElement("DIV");
+                    cajaCerveza.setAttribute( 'class','cart-list-group');
+
+                    var a = document.createElement("A");
+                    var textnode = document.createTextNode("X");
+                    a.appendChild(textnode);
+                    cajaCerveza.appendChild(a);
+
+                    var nombre = document.createElement("P");
+                    nombre.setAttribute("class", "chela-name");
+                    nombre.setAttribute("id", "nameTempProductCart");
+                    
+
+                    var strong = document.createElement("STRONG");
+                    strong.setAttribute("id", "nameTempProductCartStrong");
+                    nombre.appendChild(strong);
+
+                    var nombreCerveza = document.createTextNode(myData.nombreProducto);
+                    strong.appendChild(nombreCerveza);
+
+                    cajaCerveza.appendChild(nombre);
+                    
+                    var precio = document.createElement("P");
+                    precio.setAttribute("class", "chela-amount");
+                    var precioProducto = document.createTextNode("$"+myData.precioProducto);
+                    precio.appendChild(precioProducto);
+                    cajaCerveza.appendChild(precio);
+
+                    var cajota = document.getElementById("cart-list");
+                    cajota.appendChild(cajaCerveza);
                 }
             },
             error: function(data){
