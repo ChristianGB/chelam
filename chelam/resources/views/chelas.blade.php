@@ -2,8 +2,7 @@
 
 @section('title', 'Chelas')
 @section('page-css')
-<link rel="stylesheet" href="css/chelas-styles.css"> 
-<link rel="stylesheet" href="css/chelas-queries.css">
+<link rel="stylesheet" href="css/chelas-styles.css">
 @endsection
 
 @section('content')

@@ -3,7 +3,6 @@
 @section('title', 'Cervezas Artesanales')
 @section('page-css')
 <link rel="stylesheet" href="css/index-styles.css"> 
-<link rel="stylesheet" href="css/index-queries.css">
 @endsection
 
 @section('content')

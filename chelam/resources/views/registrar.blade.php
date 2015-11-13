@@ -1,8 +1,7 @@
 @extends('header')
 @section('title', 'Regístrate')
 @section('page-css')
-<link rel="stylesheet" href="css/registro-styles.css"> 
-<link rel="stylesheet" href="css/registro-queries.css">
+<link rel="stylesheet" href="css/registro-styles.css">
 @endsection
 
 @section('content')

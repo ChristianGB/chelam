@@ -2,7 +2,6 @@
 @section('title', 'Mayoreo')
 @section('page-css')
 <link rel="stylesheet" href="css/mayoreo-styles.css"> 
-<link rel="stylesheet" href="css/mayoreo-queries.css">
 @endsection
 @section('content')
 <section class="page-cover">

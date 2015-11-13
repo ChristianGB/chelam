@@ -320,4 +320,42 @@
     display: flex;
 }
 
-/* chela modal */
+@media only screen and (min-width: 900px) {
+    .chelas-list{
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: space-between;
+    }
+
+    .chela-info-img{
+        width: 250px;
+    }
+    
+    .chela-info-img img{
+        display: block;
+        width: 100px;
+        height: 350px;
+        margin: auto;
+    }
+    
+    .chela-info .chela-data .data-group{
+        border-spacing: 10px 10px;
+    }
+    
+    .chela-container{        
+        width: 20%;
+        padding: 20px;
+        margin: 20px;
+        
+        background: whitesmoke;
+        box-shadow: none;
+        
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;      
+    }
+    
+    .chela-list-info-content{
+        text-align: left;
+    }
+}

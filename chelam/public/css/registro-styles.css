@@ -86,3 +86,20 @@
 .register-form input[type="submit"]:hover{
     background: #1C4E9D;
 }
+
+@media only screen and (min-width: 900px) { 
+    .to-login{
+        padding: 15px;
+    }
+    
+    .register{
+        padding: 0 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .register-form{
+        margin: 0;
+    }
+}

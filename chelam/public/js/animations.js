@@ -43,7 +43,7 @@ $( document ).ready(function(){
 
 // Sticky nav
     $(window).on('scroll', function(){
-        if($(window).scrollTop() > 20){
+        if($(window).scrollTop() > 0){
             $('.main-header').addClass('fix-header')
         } else {
             $('.main-header').removeClass('fix-header')
