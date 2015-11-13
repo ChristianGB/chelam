@@ -1,7 +1,6 @@
 <?php $__env->startSection('title', 'Cervezas Artesanales'); ?>
 <?php $__env->startSection('page-css'); ?>
 <link rel="stylesheet" href="css/index-styles.css"> 
-<link rel="stylesheet" href="css/index-queries.css">
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
