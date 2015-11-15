@@ -61,5 +61,4 @@ class HomeController extends Controller {
 	public function userVistaView(){
 		return view('user');
 	}
-
 }

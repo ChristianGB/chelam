@@ -42,13 +42,14 @@ $( document ).ready(function(){
     })
 
 // Sticky nav
+    /*
     $(window).on('scroll', function(){
         if($(window).scrollTop() > 0){
             $('.main-header').addClass('fix-header')
         } else {
             $('.main-header').removeClass('fix-header')
         }
-    })
+    }) */
     
 //show chela info
     $('.more-info').click(function(e){

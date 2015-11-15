@@ -12,11 +12,11 @@
     </section>
     <section class="about-us">
     <img src="media/logos/logovert_color.png" alt="Chelam">
-    <p>Chelam es una empresa dedicada a la venta y entrega a domicilio de cervezas artesanales en todas partes del mundo a travez de nuestra <a href="#">tienda en linea</a> donde podrás encontrar todo tipo de cervezas artesanales para el gusto de todas las personas.</p> <br>
+    <p>Chelam es una empresa dedicada a la venta y entrega a domicilio de cervezas artesanales en todas partes del mundo a travez de nuestra <a href="/chelas">tienda en linea</a> donde podrás encontrar todo tipo de cervezas artesanales para el gusto de todas las personas.</p> <br>
     <p>Nuestro objetivo no es solo enriquecer la cultura dentro de los hogares sino también dentro de las empresas culinarias que tienen como objetivo desarrollar su diversidad gastronómica a través del consumo de la cerveza artesanal. </p>
 </section>
     <section class="buy">
-        <a href="#" class="btn">COMPRAR <span>AHORA</span></a>
+        <a href="/chelas" class="btn">COMPRAR <span>AHORA</span></a>
     </section>
     <section class="how-to-buy">
         <h2>¿Cómo comprar?</h2>

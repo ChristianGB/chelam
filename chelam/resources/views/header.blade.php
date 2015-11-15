@@ -42,7 +42,7 @@
 <!--   Fin ventana modal  -->
 
 <header class="main-header">
-    <a href="/"><img src="media/logos/tipo_blc.png" alt="Chelam"></a>
+    <a href="/"><img src="media/logos/tipo_gris.png" alt="Chelam"></a>
     <div class="main-nav-btn">
         <i class="fa fa-shopping-cart fa-2x show-cart-btn">
             <span class="new-element-mark">+</span>
@@ -134,7 +134,7 @@
       </div>
       <footer class="cart-list-footer">
           <p class="chelapack-total">Total: <strong>$195.00</strong></p>
-          <input type="button" value="Comprar" id="comprar-chela">
+          <a href="/carrito" id="comprar-chela">Comprar</a>
       </footer> 
   </div>
 </header>
