@@ -222,7 +222,8 @@ a{ text-decoration: none; color: #E73742; }
     }
 
 footer{
-    background: url(../media/walls/Footer.jpg) center;    
+    background: url(../media/walls/Footer.png);
+    border-top: 8px solid #164450; 
     padding: 60px;
 }
     .foot-info p{

@@ -22,6 +22,7 @@ Route::get('login', 'HomeController@loginView');
 Route::get('carrito','HomeController@carritoView');
 
 Route::get('registrar', 'HomeController@registrarUsuario');
+Route::get('datos', 'HomeController@datosUsuario');
 
 //Creación de usuario
 Route::post('crearusuario', 'UserController@crearUsuario');

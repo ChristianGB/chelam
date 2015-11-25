@@ -58,6 +58,9 @@ class HomeController extends Controller {
 	public function registrarUsuario(){
 		return view('registrar');
 	}
+	public function datosUsuario(){
+		return view('datos');
+	}
 	public function userVistaView(){
 		return view('user');
 	}

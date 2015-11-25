@@ -70,12 +70,16 @@ Cervezas Artesanales Mexicanas.</p>
         <p>Elige entre los ChelaPack prediseñados o Cervezas individuales</p>
         <div class="chelapacks">
             <div class="chelapack-container">
-                <div class="chelapack-img"></div>
+                <div class="chelapack-img">
+                    
+                </div>
                 <p>Nuestros cerveceros ya hicieron el trabajo por ti.</p> <br>
                 <p>Descubre los chelapacks diseñados para hacerte sentir una experiencia artesanal inolvidable.</p>
             </div>
             <div class="chelapack-container">
-                <div class="chelapack-img"></div>
+                <div class="chelapack-img">
+                    <img src="media/beers/chelas.png" alt="chelas">
+                </div>
                 <p>Si te sientes preparado, diseña tu chelapack tú mismo, con las cervezas que hayan revolucionado tus sentidos.</p>
             </div>
         </div>        
