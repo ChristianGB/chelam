@@ -1,0 +1,121 @@
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: 'Lato';
+	font-weight: 400;
+	color: #2C3E50;
+}
+
+a {
+	text-decoration: none;
+	color: teal;
+	transition: all 0.6s; 
+}
+
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.3em; }
+
+.title{ font-weight: 800; font-size: 1.2em; }
+.descripcion{
+	width: 90%;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding: 1em;
+}
+
+.chelapacks{ margin-top: 130px; }
+
+.chelapack{
+	width: 1200px;
+	margin: 2em auto;
+	border-bottom: 5px solid #2C3E50;
+	display: flex;
+	position: relative;
+}
+
+.chelapack--img{
+	width: 100px;
+	height: 350px;
+	padding: 20px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.chelapack--img img{
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+}
+
+.chelapack--data{
+	padding: 2em;
+	width: 1100px;
+}
+
+.cp-chelas{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:space-between;
+}
+.group{
+	width: 33%;
+	text-align: center;
+}
+.cp-chela{
+	height: 100px;
+	margin-top: 1em;
+}
+
+.agregar{
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	color: white;
+	background: #E74C3C;
+	padding: 0.7em 1em;
+	border: none;
+	outline: none;
+	border-radius: 0.3em;
+	cursor: pointer;
+}
+
+.agregar i{
+	color: white;
+	margin-right: 1em;
+}
+
+.price{
+	margin-top: 0.5em;
+}
+
+.price span{
+	color: #E74C3C;
+}
+
+@media only screen and (max-width: 1200px) {
+	.chelapack{
+		flex-flow:column wrap;
+		width: 100%;
+	}
+	.chelapack--img{
+		width: 100%;
+		text-align: center;
+		padding: 0;
+	}
+	.descripcion{
+		width: 100%;
+		text-align: justify;
+	}
+	.chelapack--data{
+		width: 100%;
+	}
+
+	.group{
+		width: 45%;
+	}
+
+	.agregar{
+		right: 2em;
+	}
+}
