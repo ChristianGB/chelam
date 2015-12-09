@@ -19,6 +19,7 @@ Route::get('userVista', 'HomeController@userVistaView');
 Route::get('listaCompras', 'HomeController@listaComprasView');
 Route::get('mayoreo', 'HomeController@mayoreoView');
 Route::get('login', 'HomeController@loginView');
+Route::get('recuperar','HomeController@recuperarView');
 Route::get('carrito','HomeController@carritoView');
 
 Route::get('registrar', 'HomeController@registrarUsuario');

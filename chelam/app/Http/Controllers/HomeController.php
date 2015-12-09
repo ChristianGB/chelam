@@ -44,6 +44,10 @@ class HomeController extends Controller {
 		return view('carrito');	
 	}
 
+	public function recuperarView(){
+		return view('recuperar');	
+	}
+
 	public function listaComprasView(){
 		return view('listaCompras');
 	}

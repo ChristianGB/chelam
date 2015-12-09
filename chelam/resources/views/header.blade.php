@@ -86,7 +86,7 @@
                 
             </div>
             <div class="access-input-group">
-                <a href="#">¿Olvidaste tu contraseña?</a>
+                <a href="/recuperar">¿Olvidaste tu contraseña?</a>
                 <input type="submit" id="submit" value="Ingresar">                    
                 <a href="/registrar"><strong>Quiero crear una cuenta</strong></a>
             </div>
