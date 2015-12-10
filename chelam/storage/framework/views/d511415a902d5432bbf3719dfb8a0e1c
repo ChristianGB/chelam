@@ -1,7 +1,6 @@
 <?php $__env->startSection('title', 'Chelas'); ?>
 <?php $__env->startSection('page-css'); ?>
-<link rel="stylesheet" href="css/chelas-styles.css"> 
-<link rel="stylesheet" href="css/chelas-queries.css">
+<link rel="stylesheet" href="css/chelas-styles.css">
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>

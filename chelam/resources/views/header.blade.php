@@ -116,13 +116,13 @@
         <?php
         $cervezas = \App::make("App\Http\Controllers\CarroController")->getPedidoCervezas();
 
-        if($cervezas!=0){
+        if($cervezas!=0){ 
           foreach ($cervezas as $key) {
             ?>
             <div class="cart-list-group">
                 <a href="">X</a>
                 <p class="chela-name" id="nameTempProductCart"><strong id="nameTempProductCartStrong">{{ $key->Nombre }}</strong></p>
-                <p class="chela-amount">1 x $65</p>
+                <p class="chela-amount">$30</p>
             </div>
             <?php
           }

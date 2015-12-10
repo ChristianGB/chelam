@@ -122,7 +122,7 @@
             <div class="cart-list-group">
                 <a href="">X</a>
                 <p class="chela-name" id="nameTempProductCart"><strong id="nameTempProductCartStrong"><?php echo e($key->Nombre); ?></strong></p>
-                <p class="chela-amount">1 x $65</p>
+                <p class="chela-amount">$30</p>
             </div>
             <?php
           }

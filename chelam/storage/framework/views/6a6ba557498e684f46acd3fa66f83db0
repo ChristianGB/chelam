@@ -1,7 +1,6 @@
 <?php $__env->startSection('title', 'Regístrate'); ?>
 <?php $__env->startSection('page-css'); ?>
-<link rel="stylesheet" href="css/registro-styles.css"> 
-<link rel="stylesheet" href="css/registro-queries.css">
+<link rel="stylesheet" href="css/registro-styles.css">
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>

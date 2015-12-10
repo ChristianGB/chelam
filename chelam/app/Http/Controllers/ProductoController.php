@@ -81,7 +81,7 @@ class ProductoController extends Controller {
 				"nombreProducto" => $nombreCerveza,
 				"precioProducto" => $precioProducto
 				)
-		);
+		);			
 	}
 
 
