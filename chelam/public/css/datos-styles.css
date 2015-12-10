@@ -1,0 +1,178 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, p, h3{
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #E73742;
+}
+
+.editor{
+    margin-top: 100px;
+}
+
+.form{
+    font-family: 'Lato';
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;   
+}
+
+.image-uploader{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: whitesmoke;
+}
+
+.thumbnail{
+    width: 150px;
+    height: 150px;
+    background: #1C4E9D;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.thumbnail img {
+    max-width: 80%;
+    max-height: 80%;    
+/*
+    max-width: 100%;   VALORES REALES
+    max-height: 100%;
+*/
+}
+
+.message{
+    display: block;
+    margin: 20px;
+    line-height: 3;
+    padding: 0 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+#user-name {
+    color: #37474F;
+}
+
+/* datos */
+.datos{
+    padding: 2em;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    border-right: 3px solid rgba(0,0,0,0.4);
+    padding: 5px;
+    font-size: 1.1em;
+    text-align: right;
+    font-family: 'Lato';
+}
+
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+
+.form-group{
+    padding: 10px 0;
+    margin: 5px 0;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+
+.genero-group{
+    display: block;
+}
+
+.label{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #37474F;
+}
+
+.error-input{
+    border-right: 3px solid #E53935;
+    background: whitesmoke;
+}
+
+.direction{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: whitesmoke;
+    border: none;
+    outline: none;
+    color: #37474F;
+    box-sizing: border-box;
+}
+
+.subm{
+    width: 140px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: none;
+    background: #4DB6AC;
+    color: whitesmoke;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.show-message{
+    display: block;
+    text-align: center;
+}
+
+
+/* Colores de fondo mensajes */
+.blue {
+    background: #BBDEFB;
+    color: #3c3c3c;
+    border: 1px solid #64B5F6;
+}
+
+.green {
+    background: #1DE9B6;
+    color: #3c3c3c;
+    border: 1px solid #4DB6AC;
+}
+
+.red {
+    background: #EF5350;
+    color: white;
+    border: 1px solid #C62828;
+}
+
+@media only screen and (min-width: 900px) {     
+    .form-group{
+        flex-flow: row;
+    }
+    
+    .input {
+        width: 40%;
+    }
+}

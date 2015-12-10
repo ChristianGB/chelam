@@ -1,0 +1,47 @@
+.recuperar{
+	max-width: 500px;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 13em;
+	text-align: center;
+}
+
+h1, p{
+	font-family: 'Lato';
+}
+
+input{
+    width: 100%;
+    
+    border: none;
+    border-bottom: 3px solid #1C4E9D;
+    outline: none;
+    
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: 5px;
+}
+input[type="submit"]{
+	background: #34495e;
+	border-bottom: 3px solid #2c3e50;
+	color: white;
+}
+
+input[type="submit"]:hover{
+	background: #2c3e50;
+}
+
+.message{
+	max-width: 500px;
+	width: 90%;
+	margin: 3em auto;
+	font-size: 1.3em;
+	text-align: center;
+	font-family: 'Lato';
+
+	padding-bottom: 2em;
+
+	border-bottom: 3px solid teal;
+}

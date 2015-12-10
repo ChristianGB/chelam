@@ -32,7 +32,7 @@ button
 .cart{ display: none; }
 
 a{ text-decoration: none; color: #E73742; }
-.fa{ color: white; }
+.fa{ color: #6c6c6c; }
 .btn{
     display: block;
     width: 150px;
@@ -145,10 +145,11 @@ a{ text-decoration: none; color: #E73742; }
     height: 100px;    
     padding: 0 20px;
     
-    background: url(../media/walls/pleca_sup.png) repeat-x;
+    background: white;
+    /*background: url(../media/walls/pleca_sup.png) repeat-x;*/
     background-size: contain;
     border-top: 7px solid #E73742;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     
     position: fixed;
     top: 0;
@@ -176,6 +177,10 @@ a{ text-decoration: none; color: #E73742; }
             color: white;
             font-weight: lighter;
             font-size: 1.2em;
+        }
+
+        .main-nav a:last-child{
+            display: none;
         }
 
 .show-nav { 
@@ -217,7 +222,8 @@ a{ text-decoration: none; color: #E73742; }
     }
 
 footer{
-    background: url(../media/walls/Footer.jpg) center;    
+    background: url(../media/walls/Footer.png);
+    border-top: 8px solid #164450; 
     padding: 60px;
 }
     .foot-info p{
@@ -241,6 +247,7 @@ footer{
     transition: all 0.8s;
     margin-right: 20px;
     cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
 }   
 
 .new-element-mark{
@@ -274,7 +281,7 @@ footer{
     text-align: center;
     box-shadow: 0 3px 7px 0 rgba(0,0,0,0.2);
 
-    border-top: 7px solid #2C3E50;
+    border-top: 5px solid rgba(0,0,0,0.2);
 
     position: absolute;
     left: 0;
@@ -401,6 +408,7 @@ footer{
 
 .cart #comprar-chela{
     width: 100%;
+    display: block;
     padding: 10px;
     border: none;
     color: white;
@@ -428,11 +436,15 @@ footer{
         .main-nav a, .main-nav a i{
             border: none;
             width: auto;
-            
+            color: #3c3c3c;
             transition: all 0.5s;
         }
             .main-nav a:hover, .main-nav a:hover i{
                 color: #E73742;
+            }
+
+            .main-nav a:last-child{
+                display: inline-block;
             }
     
 /*    Login */

@@ -44,6 +44,10 @@ class HomeController extends Controller {
 		return view('carrito');	
 	}
 
+	public function recuperarView(){
+		return view('recuperar');	
+	}
+
 	public function listaComprasView(){
 		return view('listaCompras');
 	}
@@ -58,8 +62,10 @@ class HomeController extends Controller {
 	public function registrarUsuario(){
 		return view('registrar');
 	}
+	public function datosUsuario(){
+		return view('datos');
+	}
 	public function userVistaView(){
 		return view('user');
 	}
-
 }

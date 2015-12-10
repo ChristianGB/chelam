@@ -1,0 +1,168 @@
+.title{
+	text-align: center;
+	color: #34495E;
+	margin: 30px 0;
+}
+
+.pedido{
+	width: 100%;
+	max-width: 1000px;
+    padding-top: 20px;
+	margin: 0 auto;
+    font-family: 'Lato';
+    color: #3c3c3c;
+}
+
+.table--header{ display: none; }
+
+.table--row{
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.pedido--cantidad__input{
+    display: block;
+    width: 80px;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.table--row:nth-child(odd){
+    background: whitesmoke;
+}
+
+.table--col{
+    margin-bottom: 10px;
+}
+
+.pedido--img{
+    max-height: 150px;
+}
+
+.pedido--costo__total{
+    font-size: 1.5em;
+}
+
+/* FORMAS DE PAGO */
+.formas-pago{
+    width: 90%;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 2em auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+.pago{
+    width: 200px;
+    line-height: 3;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+.pago--oxxo{
+    background: #DE1D1D;
+    color: white;    
+}
+
+.pago--paypal{
+    background: whitesmoke;
+    color: #34495E;
+}
+
+@media only screen and (min-width: 900px) { 
+    .table--header,
+    .table--row{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .table--header{
+        border-bottom: 3px solid #34495E;
+    }
+
+    .table--header h3{
+        color: #3c3c3c;
+    }
+    
+    .table--row{
+        padding: 0;
+    }
+
+    .table--col{
+        text-align: justify;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    /* Estilos de los pedidos */
+    .pedido--producto,
+    .pedido--cantidad,
+    .pedido--costo{
+        flex-grow: 1;
+        width: 20%;
+    }
+
+    .pedido--articulo{
+        flex-grow: 3;
+        width: 40%;
+    }
+
+    /* Producto imagen */
+
+    .pedido--producto__elemento{
+        text-align: center;
+    }
+
+    .pedido--img{
+        margin: 0 auto;
+        max-height: 150px;
+    }
+
+    /* Producto artículo */
+
+    .pedido--precio{
+        margin-top: 30px;
+    }
+
+    /* Producto cantidad */
+
+    .pedido--cantidad__input{
+        box-sizing: border-box;
+        padding: 10px;
+        width: 80px;
+        font-size: 1.2em;
+        display: block;
+        margin-bottom: 43px;
+    }
+
+    /* Pedido costo total */
+    .pedido--costo__total{
+        font-size: 1.5em;
+    }
+    
+    /* Pagos */
+    .pedido--info{
+        align-self: flex-start;
+    }
+    
+    .pago{
+        margin: 0;
+        margin-top: 30px;
+        display: inline-block;
+    }
+    
+    .pago--oxxo{
+        margin-right: 40px;
+    }
+}
