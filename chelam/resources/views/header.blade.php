@@ -119,8 +119,8 @@
         if($cervezas!=0){ 
           foreach ($cervezas as $key) {
             ?>
-            <div class="cart-list-group">
-                <a href="">X</a>
+            <div class="cart-list-group" id="<?php echo $key->idCerveza ?>">
+                <p href="" id="<?php echo $key->idCerveza ?>" class="borrarDeCarrito">X</p>
                 <p class="chela-name" id="nameTempProductCart"><strong id="nameTempProductCartStrong">{{ $key->Nombre }}</strong></p>
                 <p class="chela-amount">$30</p>
             </div>

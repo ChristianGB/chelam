@@ -10,11 +10,11 @@
     </section>
     <section class="about-us">
     <img src="media/logos/logovert_color.png" alt="Chelam">
-    <p>Chelam es una empresa dedicada a la venta y entrega a domicilio de cervezas artesanales en todas partes del mundo a travez de nuestra <a href="#">tienda en linea</a> donde podrás encontrar todo tipo de cervezas artesanales para el gusto de todas las personas.</p> <br>
+    <p>Chelam es una empresa dedicada a la venta y entrega a domicilio de cervezas artesanales en todas partes del mundo a travez de nuestra <a href="/chelas">tienda en linea</a> donde podrás encontrar todo tipo de cervezas artesanales para el gusto de todas las personas.</p> <br>
     <p>Nuestro objetivo no es solo enriquecer la cultura dentro de los hogares sino también dentro de las empresas culinarias que tienen como objetivo desarrollar su diversidad gastronómica a través del consumo de la cerveza artesanal. </p>
 </section>
     <section class="buy">
-        <a href="#" class="btn">COMPRAR <span>AHORA</span></a>
+        <a href="/chelas" class="btn">COMPRAR <span>AHORA</span></a>
     </section>
     <section class="how-to-buy">
         <h2>¿Cómo comprar?</h2>
@@ -68,12 +68,16 @@ Cervezas Artesanales Mexicanas.</p>
         <p>Elige entre los ChelaPack prediseñados o Cervezas individuales</p>
         <div class="chelapacks">
             <div class="chelapack-container">
-                <div class="chelapack-img"></div>
+                <div class="chelapack-img">
+                    <a href="/chelapack"><img src="media/beers/ChelaPack.jpg" alt="chelas"></a>
+                </div>
                 <p>Nuestros cerveceros ya hicieron el trabajo por ti.</p> <br>
                 <p>Descubre los chelapacks diseñados para hacerte sentir una experiencia artesanal inolvidable.</p>
             </div>
             <div class="chelapack-container">
-                <div class="chelapack-img"></div>
+                <div class="chelapack-img">
+                    <a href="/chelas"><img src="media/beers/Individuales.jpg" alt="chelas"></a>
+                </div>
                 <p>Si te sientes preparado, diseña tu chelapack tú mismo, con las cervezas que hayan revolucionado tus sentidos.</p>
             </div>
         </div>        

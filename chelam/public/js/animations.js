@@ -54,7 +54,8 @@ $( document ).ready(function(){
 //show chela info
     $('.more-info').click(function(e){
         e.preventDefault()
-        $('.chela-modal').addClass('show-chela-info')
+        $('.'+this.id).addClass('show-chela-info')
+
     })
     
     $('.exit-modal').click(function(e){
@@ -105,6 +106,7 @@ $( document ).ready(function(){
     $(".add-to-cart").click(function(e){
         e.preventDefault();
         var idCerveza = this.id;
+        var idCont = 0;
         $.ajax({
             url: 'addTempCart',
             type: "post",
@@ -113,19 +115,22 @@ $( document ).ready(function(){
                 if(data=="error login"){
                     alert("Por favor crea una cuenta o ingresa para hacer tu pedido");
                 }else{
+                    idCont++;
                     var myData = JSON.parse(data);
                     $("#contentCart").html(myData.cantProductos);
 
                     var cajaCerveza = document.createElement("DIV");
                     cajaCerveza.setAttribute( 'class','cart-list-group');
+                    cajaCerveza.setAttribute( 'id', myData.idCerveza);
 
-                    var a = document.createElement("A");
+                    var p = document.createElement("P");
                     var textnode = document.createTextNode("X");
-                    a.appendChild(textnode);
-                    cajaCerveza.appendChild(a);
+                    p.setAttribute("class","borrarDeCarrito");
+                    p.appendChild(textnode);
+                    cajaCerveza.appendChild(p);
 
                     var nombre = document.createElement("P");
-                    nombre.setAttribute("class", "chela-name");
+                    nombre.setAttribute("class", "chela-name "+myData.idCerveza);
                     nombre.setAttribute("id", "nameTempProductCart");
                     
 
@@ -152,5 +157,11 @@ $( document ).ready(function(){
                 console.log(data);
             }
         });  
+    });
+    
+    //Borrar de la lista del carrito
+    $(".borrarDeCarrito").click(function(e){
+        e.preventDefault();
+        //$(".cart-list-group").("#"+this.id).remove();
     });
 });
